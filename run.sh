@@ -1,0 +1,1 @@
+sudo docker run --gpus all --runtime nvidia -it --privileged --ipc=host --pid=host -e NVIDIA_DRIVER_CAPABILITIES=all -e NVIDIA_VISIBLE_DEVICES=all -e DISPLAY   -v /dev:/dev -v /tmp/.X11-unix/:/tmp/.X11-unix   -v  ${HOME}/zed_docker_ai/:/usr/local/zed/resources/ -v ${HOME}/zed_catture:./zed_catture PointCloudCompression:v0

@@ -4,9 +4,7 @@ set -e
 # setup ros2 environment
 source "/opt/ros/$ROS_DISTRO/setup.bash" --
 source "/root/ros2_ws/install/local_setup.bash" --
-cd /root/ros2_ws/ #use your current ROS 2 workspace folder
-colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release
-echo source $(pwd)/install/local_setup.bash >> ~/.bashrc
+
 # Welcome information
 echo "ZED ROS2 Docker Image"
 echo "---------------------"

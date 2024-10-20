@@ -132,8 +132,13 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
   ' -DCMAKE_CXX_FLAGS="-Wl,--allow-shlib-undefined"' " && \
   rm -rf /var/lib/apt/lists/*
 
-WORKDIR /root/ros2_ws
 
+  
+WORKDIR /root/ros2_ws
+RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash -- || \
+  source /root/ros2_ws/install/local_setup.bash -- && \
+  colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release && \
+  echo source $(pwd)/install/local_setup.bash >> ~/.bashrc"
 # Setup environment variables
 COPY ros_entrypoint.sh /sbin/ros_entrypoint.sh
 RUN sudo chmod 755 /sbin/ros_entrypoint.sh

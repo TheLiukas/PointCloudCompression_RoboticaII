@@ -142,8 +142,8 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash -- || \
 # Setup environment variables
 COPY ros_entrypoint.sh /sbin/ros_entrypoint.sh
 RUN sudo chmod 755 /sbin/ros_entrypoint.sh
-COPY colcon_build.sh colcon_build.sh
-RUN sudo chmod 755 colcon_build.sh
+#COPY colcon_build.sh colcon_build.sh
+#RUN sudo chmod 755 colcon_build.sh
 #RUN sudo ./colcon_build.sh
 
 

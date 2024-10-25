@@ -59,7 +59,7 @@ IFS='.' read -r major minor patch <<< "$zed_sdk_version_number"
 echo "ZED SDK $major.$minor.$patch detected."
 
 echo "Building dockerfile for $1 and ZED SDK $2"
-docker build -t PointCloudCompression:v0 \
+docker build -t point_cloud_compression:v0 \
 --build-arg ZED_SDK_MAJOR=$major \
 --build-arg ZED_SDK_MINOR=$minor \
 --build-arg ZED_SDK_PATCH=$patch \

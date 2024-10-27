@@ -1,0 +1,13 @@
+FROM ros:humble
+ 
+# use bash
+SHELL ["/bin/bash", "-c"]
+ 
+# install utilities 
+RUN apt update && apt upgrade -y && \
+    apt install -y nano wget curl 
+
+WORKDIR /root/home/
+#RUN wget https://raw.githubusercontent.com/stereolabs/zed-ros2-examples/refs/heads/master/zed_display_rviz2/rviz2/zed2i.rviz
+COPY zed2i.rviz ./zed2i.rviz
+RUN apt update && apt install -y ros-humble-desktop-full

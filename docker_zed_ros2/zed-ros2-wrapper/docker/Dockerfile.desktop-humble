@@ -127,20 +127,17 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
   ' -DCMAKE_CXX_FLAGS="-Wl,--allow-shlib-undefined"' " && \
   rm -rf /var/lib/apt/lists/*
 
+RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+  apt update -y || true && sudo apt install -y '~nros-humble-rqt*'"
+
 WORKDIR /root/ros2_ws
 
 # Setup environment variables
 COPY ros_entrypoint.sh /sbin/ros_entrypoint.sh
 RUN ls -lah /sbin/
 RUN sudo chmod 755 /sbin/ros_entrypoint.sh
-<<<<<<< HEAD:docker_ws/Dockerfile.desktop-humble
-#COPY colcon_build.sh colcon_build.sh
-#RUN sudo chmod 755 colcon_build.sh
-#RUN sudo ./colcon_build.sh
 
-
-=======
->>>>>>> c56b1f3 (Fix docker build, aggiunta image per docker con ros2:humble full desktop per rviz):docker_zed_ros2/zed-ros2-wrapper/docker/Dockerfile.desktop-humble
 
 ENTRYPOINT ["/sbin/ros_entrypoint.sh"]
 CMD ["bash"]
+

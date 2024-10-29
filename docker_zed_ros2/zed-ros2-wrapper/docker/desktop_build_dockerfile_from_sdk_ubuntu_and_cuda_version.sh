@@ -59,13 +59,9 @@ IFS='.' read -r major minor patch <<< "$zed_sdk_version_number"
 echo "ZED SDK $major.$minor.$patch detected."
 
 echo "Building dockerfile for $1 and ZED SDK $2"
-<<<<<<< HEAD:docker_ws/desktop_build_dockerfile_from_sdk_ubuntu_and_cuda_version.sh
-docker build -t point_cloud_compression:v0 \
-=======
+
 docker build -t point_cloud_compression_ros2_zed:v0 \
---no-cache \
 --progress=plain \
->>>>>>> c56b1f3 (Fix docker build, aggiunta image per docker con ros2:humble full desktop per rviz):docker_zed_ros2/zed-ros2-wrapper/docker/desktop_build_dockerfile_from_sdk_ubuntu_and_cuda_version.sh
 --build-arg ZED_SDK_MAJOR=$major \
 --build-arg ZED_SDK_MINOR=$minor \
 --build-arg ZED_SDK_PATCH=$patch \

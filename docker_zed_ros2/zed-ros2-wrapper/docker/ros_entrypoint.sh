@@ -17,4 +17,5 @@ echo "---"
 echo 'Available ZED packages:'
 ros2 pkg list | grep zed
 echo "---------------------"    
+
 exec "$@"

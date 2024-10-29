@@ -128,7 +128,9 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
   rm -rf /var/lib/apt/lists/*
 
 RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
-  apt update -y || true && sudo apt install -y '~nros-humble-rqt*'"
+  apt update -y || true && sudo apt install -y '~nros-humble-rqt*' && \
+  sudo apt install -y ros-humble-rmw-cyclonedds-cpp && echo export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp >> ~/.bashrc"
+
 
 WORKDIR /root/ros2_ws
 

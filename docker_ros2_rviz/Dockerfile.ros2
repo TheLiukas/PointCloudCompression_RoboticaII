@@ -17,3 +17,5 @@ RUN apt-get install --no-install-recommends -y \
   ros-humble-point-cloud-transport \
   ros-humble-point-cloud-interfaces
 
+ENV TZ="Europe/Rome"
+RUN date

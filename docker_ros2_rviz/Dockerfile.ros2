@@ -21,6 +21,7 @@ ENV TZ="Europe/Rome"
 RUN date
 WORKDIR /root/home/catkin_ws/src/
 RUN git clone https://github.com/stereolabs/zed-ros2-interfaces.git
+COPY ./rviz-plugin-zed-od/ ./rviz-plugin-zed-od/
 RUN ls -lah
 WORKDIR /root/home/catkin_ws/
 RUN ls -lah
@@ -30,3 +31,6 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
   colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release && \
   echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
   source ~/.bashrc" 
+RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+  apt-get update -y || true && \
+  apt-get install -y ros-humble-grid-map"

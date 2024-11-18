@@ -1,0 +1,13 @@
+# draco pkg-config.
+prefix=/root/home/point_cloud_transport_ws/install/draco
+exec_prefix=/root/home/point_cloud_transport_ws/install/draco/bin
+libdir=/root/home/point_cloud_transport_ws/install/draco/lib
+includedir=/root/home/point_cloud_transport_ws/install/draco/include
+
+Name: Draco
+Description: 3D Compression.
+Version: 1.3.5
+Requires:
+Conflicts:
+Libs: -L/root/home/point_cloud_transport_ws/install/draco/lib -ldraco
+Cflags: -I/root/home/point_cloud_transport_ws/install/draco/include -std=c++11

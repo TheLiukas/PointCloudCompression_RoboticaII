@@ -1,0 +1,6 @@
+source;share/draco/hook/pkg_config_path.ps1
+source;share/draco/hook/pkg_config_path.dsv
+source;share/draco/hook/pkg_config_path.sh
+source;share/draco/hook/pkg_config_path_multiarch.ps1
+source;share/draco/hook/pkg_config_path_multiarch.dsv
+source;share/draco/hook/pkg_config_path_multiarch.sh

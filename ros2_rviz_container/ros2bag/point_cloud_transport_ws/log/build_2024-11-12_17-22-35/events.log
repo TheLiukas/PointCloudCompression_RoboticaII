@@ -1,0 +1,420 @@
+[0.000000] (-) TimerEvent: {}
+[0.000972] (draco) JobQueued: {'identifier': 'draco', 'dependencies': OrderedDict()}
+[0.001140] (point_cloud_transport) JobQueued: {'identifier': 'point_cloud_transport', 'dependencies': OrderedDict([('draco', '/root/home/point_cloud_transport_ws/install/draco')])}
+[0.001283] (draco_point_cloud_transport) JobQueued: {'identifier': 'draco_point_cloud_transport', 'dependencies': OrderedDict([('draco', '/root/home/point_cloud_transport_ws/install/draco'), ('point_cloud_transport', '/root/home/point_cloud_transport_ws/install/point_cloud_transport')])}
+[0.001384] (point_cloud_transport_plugins) JobQueued: {'identifier': 'point_cloud_transport_plugins', 'dependencies': OrderedDict([('draco', '/root/home/point_cloud_transport_ws/install/draco'), ('point_cloud_transport', '/root/home/point_cloud_transport_ws/install/point_cloud_transport'), ('draco_point_cloud_transport', '/root/home/point_cloud_transport_ws/install/draco_point_cloud_transport')])}
+[0.001483] (draco) JobStarted: {'identifier': 'draco'}
+[0.016047] (draco) JobProgress: {'identifier': 'draco', 'progress': 'cmake'}
+[0.016988] (draco) Command: {'cmd': ['/usr/bin/cmake', '/root/home/point_cloud_transport_ws/src/draco', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/root/home/point_cloud_transport_ws/install/draco'], 'cwd': '/root/home/point_cloud_transport_ws/build/draco', 'env': OrderedDict([('HOSTNAME', 'MaxLaptop'), ('ROS_PACKAGE_PATH', '/root/home/tentativo_colcon/install/tentativo_colcon/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/home/catkin_ws/install/rviz_plugin_zed_od/lib:/root/home/catkin_ws/install/zed_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/home/point_cloud_transport_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/home/tentativo_colcon/install:/root/home/catkin_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/root/home/tentativo_colcon/install/tentativo_colcon/lib/x86_64-linux-gnu/pkgconfig:/root/home/tentativo_colcon/install/tentativo_colcon/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/home/catkin_ws/install/rviz_plugin_zed_od:/root/home/catkin_ws/install/zed_interfaces:/opt/ros/humble'), ('PWD', '/root/home/point_cloud_transport_ws/build/draco'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/home/catkin_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Rome'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/root/home/tentativo_colcon/install/tentativo_colcon:/root/home/catkin_ws/install/rviz_plugin_zed_od:/root/home/catkin_ws/install/zed_interfaces')]), 'shell': False}
+[0.070098] (draco) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.098029] (-) TimerEvent: {}
+[0.178731] (draco) StdoutLine: {'line': b'-- Generating done\n'}
+[0.186415] (draco) StdoutLine: {'line': b'-- Build files have been written to: /root/home/point_cloud_transport_ws/build/draco\n'}
+[0.190611] (draco) CommandEnded: {'returncode': 0}
+[0.191656] (draco) JobProgress: {'identifier': 'draco', 'progress': 'build'}
+[0.193528] (draco) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/home/point_cloud_transport_ws/build/draco', '--', '-j8', '-l8'], 'cwd': '/root/home/point_cloud_transport_ws/build/draco', 'env': OrderedDict([('HOSTNAME', 'MaxLaptop'), ('ROS_PACKAGE_PATH', '/root/home/tentativo_colcon/install/tentativo_colcon/share'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/home/catkin_ws/install/rviz_plugin_zed_od/lib:/root/home/catkin_ws/install/zed_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/home/point_cloud_transport_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/home/tentativo_colcon/install:/root/home/catkin_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/root/home/tentativo_colcon/install/tentativo_colcon/lib/x86_64-linux-gnu/pkgconfig:/root/home/tentativo_colcon/install/tentativo_colcon/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/home/catkin_ws/install/rviz_plugin_zed_od:/root/home/catkin_ws/install/zed_interfaces:/opt/ros/humble'), ('PWD', '/root/home/point_cloud_transport_ws/build/draco'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/root/home/catkin_ws/install/zed_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Rome'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble:/root/home/tentativo_colcon/install/tentativo_colcon:/root/home/catkin_ws/install/rviz_plugin_zed_od:/root/home/catkin_ws/install/zed_interfaces')]), 'shell': False}
+[0.198473] (-) TimerEvent: {}
+[0.255393] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_attributes\x1b[0m\n'}
+[0.255858] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_attributes_pred_schemes_dec\x1b[0m\n'}
+[0.257153] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_attributes_dec\x1b[0m\n'}
+[0.257707] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_enc_config\x1b[0m\n'}
+[0.258596] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_bit_coders\x1b[0m\n'}
+[0.260132] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_attributes_enc\x1b[0m\n'}
+[0.260685] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_dec_config\x1b[0m\n'}
+[0.267892] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_attributes_pred_schemes_enc\x1b[0m\n'}
+[0.276778] (draco) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_pred_schemes_dec.dir/draco_compression_attributes_pred_schemes_dec.cc.o\x1b[0m\n'}
+[0.281592] (draco) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object CMakeFiles/draco_enc_config.dir/draco_enc_config.cc.o\x1b[0m\n'}
+[0.291746] (draco) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/draco_dec_config.dir/draco_dec_config.cc.o\x1b[0m\n'}
+[0.292176] (draco) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/draco_attributes.dir/src/draco/attributes/attribute_octahedron_transform.cc.o\x1b[0m\n'}
+[0.296587] (draco) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_pred_schemes_enc.dir/src/draco/compression/attributes/prediction_schemes/prediction_scheme_encoder_factory.cc.o\x1b[0m\n'}
+[0.298806] (-) TimerEvent: {}
+[0.299328] (draco) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/adaptive_rans_bit_decoder.cc.o\x1b[0m\n'}
+[0.304053] (draco) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/attributes_encoder.cc.o\x1b[0m\n'}
+[0.310268] (draco) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/attributes_decoder.cc.o\x1b[0m\n'}
+[0.332287] (draco) StdoutLine: {'line': b'[  8%] Built target draco_compression_attributes_pred_schemes_dec\n'}
+[0.348763] (draco) StdoutLine: {'line': b'[  8%] Built target draco_enc_config\n'}
+[0.349189] (draco) StdoutLine: {'line': b'[  8%] Built target draco_dec_config\n'}
+[0.355378] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_decode\x1b[0m\n'}
+[0.366304] (draco) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/draco_attributes.dir/src/draco/attributes/attribute_quantization_transform.cc.o\x1b[0m\n'}
+[0.366643] (draco) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/kd_tree_attributes_decoder.cc.o\x1b[0m\n'}
+[0.385451] (draco) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_decode.dir/src/draco/compression/decode.cc.o\x1b[0m\n'}
+[0.399299] (-) TimerEvent: {}
+[0.500194] (-) TimerEvent: {}
+[0.601151] (-) TimerEvent: {}
+[0.702443] (-) TimerEvent: {}
+[0.803605] (-) TimerEvent: {}
+[0.905106] (-) TimerEvent: {}
+[1.006069] (-) TimerEvent: {}
+[1.106088] (draco) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/adaptive_rans_bit_encoder.cc.o\x1b[0m\n'}
+[1.106453] (-) TimerEvent: {}
+[1.207020] (-) TimerEvent: {}
+[1.307777] (-) TimerEvent: {}
+[1.409103] (-) TimerEvent: {}
+[1.510189] (-) TimerEvent: {}
+[1.611419] (-) TimerEvent: {}
+[1.712563] (-) TimerEvent: {}
+[1.725157] (draco) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/draco_attributes.dir/src/draco/attributes/attribute_transform.cc.o\x1b[0m\n'}
+[1.813595] (-) TimerEvent: {}
+[1.915399] (-) TimerEvent: {}
+[2.016369] (-) TimerEvent: {}
+[2.094817] (draco) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/draco_attributes.dir/src/draco/attributes/geometry_attribute.cc.o\x1b[0m\n'}
+[2.116679] (-) TimerEvent: {}
+[2.160004] (draco) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/sequential_attribute_decoder.cc.o\x1b[0m\n'}
+[2.217015] (-) TimerEvent: {}
+[2.259992] (draco) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/kd_tree_attributes_encoder.cc.o\x1b[0m\n'}
+[2.317364] (-) TimerEvent: {}
+[2.362224] (draco) StdoutLine: {'line': b'[ 15%] Built target draco_compression_attributes_pred_schemes_enc\n'}
+[2.367257] (draco) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/draco_compression_encode.dir/progress.make' has modification time 0.29 s in the future\n"}
+[2.378263] (draco) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/direct_bit_decoder.cc.o\x1b[0m\n'}
+[2.385850] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_encode\x1b[0m\n'}
+[2.396403] (draco) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[2.399853] (draco) StderrLine: {'line': b"gmake[2]: Warning: File 'CMakeFiles/draco_compression_encode.dir/progress.make' has modification time 0.25 s in the future\n"}
+[2.417783] (-) TimerEvent: {}
+[2.420226] (draco) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_encode.dir/src/draco/compression/encode.cc.o\x1b[0m\n'}
+[2.518202] (-) TimerEvent: {}
+[2.619008] (-) TimerEvent: {}
+[2.719931] (-) TimerEvent: {}
+[2.821133] (-) TimerEvent: {}
+[2.823298] (draco) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/draco_attributes.dir/src/draco/attributes/point_attribute.cc.o\x1b[0m\n'}
+[2.921776] (-) TimerEvent: {}
+[2.946404] (draco) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_encode.dir/src/draco/compression/expert_encode.cc.o\x1b[0m\n'}
+[3.022531] (-) TimerEvent: {}
+[3.123730] (-) TimerEvent: {}
+[3.225159] (-) TimerEvent: {}
+[3.238587] (draco) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/direct_bit_encoder.cc.o\x1b[0m\n'}
+[3.325461] (-) TimerEvent: {}
+[3.426160] (-) TimerEvent: {}
+[3.527705] (-) TimerEvent: {}
+[3.566729] (draco) StdoutLine: {'line': b'[ 20%] Built target draco_compression_decode\n'}
+[3.596473] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_entropy\x1b[0m\n'}
+[3.628128] (-) TimerEvent: {}
+[3.635085] (draco) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_entropy.dir/src/draco/compression/entropy/shannon_entropy.cc.o\x1b[0m\n'}
+[3.728577] (-) TimerEvent: {}
+[3.829536] (-) TimerEvent: {}
+[3.930524] (-) TimerEvent: {}
+[3.991529] (draco) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/sequential_attribute_decoders_controller.cc.o\x1b[0m\n'}
+[4.031170] (-) TimerEvent: {}
+[4.132374] (-) TimerEvent: {}
+[4.233597] (-) TimerEvent: {}
+[4.280136] (draco) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/rans_bit_decoder.cc.o\x1b[0m\n'}
+[4.334563] (-) TimerEvent: {}
+[4.435191] (-) TimerEvent: {}
+[4.535792] (-) TimerEvent: {}
+[4.581603] (draco) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_entropy.dir/src/draco/compression/entropy/symbol_decoding.cc.o\x1b[0m\n'}
+[4.636068] (-) TimerEvent: {}
+[4.738060] (-) TimerEvent: {}
+[4.841772] (-) TimerEvent: {}
+[4.944781] (-) TimerEvent: {}
+[5.045474] (-) TimerEvent: {}
+[5.146193] (-) TimerEvent: {}
+[5.177940] (draco) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/rans_bit_encoder.cc.o\x1b[0m\n'}
+[5.246470] (-) TimerEvent: {}
+[5.347270] (-) TimerEvent: {}
+[5.448084] (-) TimerEvent: {}
+[5.548949] (-) TimerEvent: {}
+[5.649913] (-) TimerEvent: {}
+[5.751671] (-) TimerEvent: {}
+[5.852869] (-) TimerEvent: {}
+[5.954897] (-) TimerEvent: {}
+[6.055517] (-) TimerEvent: {}
+[6.156912] (-) TimerEvent: {}
+[6.257738] (-) TimerEvent: {}
+[6.350798] (draco) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/symbol_bit_decoder.cc.o\x1b[0m\n'}
+[6.358145] (-) TimerEvent: {}
+[6.459007] (-) TimerEvent: {}
+[6.559910] (-) TimerEvent: {}
+[6.578477] (draco) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/symbol_bit_encoder.cc.o\x1b[0m\n'}
+[6.660494] (-) TimerEvent: {}
+[6.761503] (-) TimerEvent: {}
+[6.862696] (-) TimerEvent: {}
+[6.943595] (draco) StderrLine: {'line': b'gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.\n'}
+[6.962906] (draco) StdoutLine: {'line': b'[ 27%] Built target draco_compression_encode\n'}
+[6.963308] (-) TimerEvent: {}
+[6.992775] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_mesh_traverser\x1b[0m\n'}
+[7.021225] (draco) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_mesh_traverser.dir/draco_compression_mesh_traverser.cc.o\x1b[0m\n'}
+[7.050640] (draco) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/sequential_integer_attribute_decoder.cc.o\x1b[0m\n'}
+[7.064204] (-) TimerEvent: {}
+[7.105911] (draco) StdoutLine: {'line': b'[ 29%] Built target draco_compression_mesh_traverser\n'}
+[7.131718] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_mesh_dec\x1b[0m\n'}
+[7.165161] (-) TimerEvent: {}
+[7.173003] (draco) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_mesh_dec.dir/src/draco/compression/mesh/mesh_decoder.cc.o\x1b[0m\n'}
+[7.266738] (-) TimerEvent: {}
+[7.368856] (-) TimerEvent: {}
+[7.391661] (draco) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_mesh_dec.dir/src/draco/compression/mesh/mesh_edgebreaker_decoder.cc.o\x1b[0m\n'}
+[7.469362] (-) TimerEvent: {}
+[7.570386] (-) TimerEvent: {}
+[7.671373] (-) TimerEvent: {}
+[7.684096] (draco) StdoutLine: {'line': b'[ 31%] Built target draco_compression_bit_coders\n'}
+[7.712017] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_mesh_enc\x1b[0m\n'}
+[7.753221] (draco) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_mesh_enc.dir/src/draco/compression/mesh/mesh_edgebreaker_encoder.cc.o\x1b[0m\n'}
+[7.772089] (-) TimerEvent: {}
+[7.873401] (-) TimerEvent: {}
+[7.974908] (-) TimerEvent: {}
+[8.075474] (-) TimerEvent: {}
+[8.176063] (-) TimerEvent: {}
+[8.276797] (-) TimerEvent: {}
+[8.377595] (-) TimerEvent: {}
+[8.478640] (-) TimerEvent: {}
+[8.579780] (-) TimerEvent: {}
+[8.680801] (-) TimerEvent: {}
+[8.728836] (draco) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_entropy.dir/src/draco/compression/entropy/symbol_encoding.cc.o\x1b[0m\n'}
+[8.781478] (-) TimerEvent: {}
+[8.814044] (draco) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_mesh_dec.dir/src/draco/compression/mesh/mesh_edgebreaker_decoder_impl.cc.o\x1b[0m\n'}
+[8.882204] (-) TimerEvent: {}
+[8.983396] (-) TimerEvent: {}
+[9.084839] (-) TimerEvent: {}
+[9.186938] (-) TimerEvent: {}
+[9.287667] (-) TimerEvent: {}
+[9.388478] (-) TimerEvent: {}
+[9.489392] (-) TimerEvent: {}
+[9.587208] (draco) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_mesh_dec.dir/src/draco/compression/mesh/mesh_sequential_decoder.cc.o\x1b[0m\n'}
+[9.590280] (-) TimerEvent: {}
+[9.692599] (-) TimerEvent: {}
+[9.795154] (-) TimerEvent: {}
+[9.856061] (draco) StdoutLine: {'line': b'[ 35%] Built target draco_attributes\n'}
+[9.883644] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_point_cloud_dec\x1b[0m\n'}
+[9.895339] (-) TimerEvent: {}
+[9.922338] (draco) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_dec.dir/src/draco/compression/point_cloud/point_cloud_decoder.cc.o\x1b[0m\n'}
+[9.995542] (-) TimerEvent: {}
+[10.096241] (-) TimerEvent: {}
+[10.196893] (-) TimerEvent: {}
+[10.297636] (-) TimerEvent: {}
+[10.305237] (draco) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_mesh_enc.dir/src/draco/compression/mesh/mesh_edgebreaker_encoder_impl.cc.o\x1b[0m\n'}
+[10.398052] (-) TimerEvent: {}
+[10.498989] (-) TimerEvent: {}
+[10.601578] (-) TimerEvent: {}
+[10.702689] (-) TimerEvent: {}
+[10.719534] (draco) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/sequential_normal_attribute_decoder.cc.o\x1b[0m\n'}
+[10.803519] (-) TimerEvent: {}
+[10.904994] (-) TimerEvent: {}
+[11.005522] (-) TimerEvent: {}
+[11.106153] (-) TimerEvent: {}
+[11.206839] (-) TimerEvent: {}
+[11.307740] (-) TimerEvent: {}
+[11.408605] (-) TimerEvent: {}
+[11.509545] (-) TimerEvent: {}
+[11.610628] (-) TimerEvent: {}
+[11.680959] (draco) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/sequential_attribute_encoder.cc.o\x1b[0m\n'}
+[11.711378] (-) TimerEvent: {}
+[11.814021] (-) TimerEvent: {}
+[11.915717] (-) TimerEvent: {}
+[12.018422] (-) TimerEvent: {}
+[12.064276] (draco) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/sequential_attribute_encoders_controller.cc.o\x1b[0m\n'}
+[12.118894] (-) TimerEvent: {}
+[12.212118] (draco) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_dec.dir/src/draco/compression/point_cloud/point_cloud_kd_tree_decoder.cc.o\x1b[0m\n'}
+[12.219416] (-) TimerEvent: {}
+[12.320395] (-) TimerEvent: {}
+[12.421986] (-) TimerEvent: {}
+[12.523363] (-) TimerEvent: {}
+[12.625006] (-) TimerEvent: {}
+[12.725855] (-) TimerEvent: {}
+[12.827017] (-) TimerEvent: {}
+[12.928756] (-) TimerEvent: {}
+[13.030177] (-) TimerEvent: {}
+[13.131396] (-) TimerEvent: {}
+[13.233164] (-) TimerEvent: {}
+[13.334454] (-) TimerEvent: {}
+[13.435185] (-) TimerEvent: {}
+[13.535840] (-) TimerEvent: {}
+[13.636582] (-) TimerEvent: {}
+[13.737291] (-) TimerEvent: {}
+[13.751872] (draco) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/sequential_integer_attribute_encoder.cc.o\x1b[0m\n'}
+[13.837629] (-) TimerEvent: {}
+[13.939146] (-) TimerEvent: {}
+[13.999566] (draco) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_dec.dir/src/draco/compression/point_cloud/point_cloud_sequential_decoder.cc.o\x1b[0m\n'}
+[14.039666] (-) TimerEvent: {}
+[14.140702] (-) TimerEvent: {}
+[14.241850] (-) TimerEvent: {}
+[14.343113] (-) TimerEvent: {}
+[14.444355] (-) TimerEvent: {}
+[14.545222] (-) TimerEvent: {}
+[14.645793] (-) TimerEvent: {}
+[14.748598] (-) TimerEvent: {}
+[14.851500] (-) TimerEvent: {}
+[14.958866] (-) TimerEvent: {}
+[15.061413] (-) TimerEvent: {}
+[15.161561] (draco) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/sequential_quantization_attribute_decoder.cc.o\x1b[0m\n'}
+[15.161974] (-) TimerEvent: {}
+[15.263003] (-) TimerEvent: {}
+[15.324188] (draco) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/sequential_normal_attribute_encoder.cc.o\x1b[0m\n'}
+[15.363586] (-) TimerEvent: {}
+[15.465510] (-) TimerEvent: {}
+[15.567988] (-) TimerEvent: {}
+[15.669615] (-) TimerEvent: {}
+[15.772113] (-) TimerEvent: {}
+[15.874325] (-) TimerEvent: {}
+[15.976382] (-) TimerEvent: {}
+[16.001053] (draco) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/sequential_quantization_attribute_encoder.cc.o\x1b[0m\n'}
+[16.077843] (-) TimerEvent: {}
+[16.137397] (draco) StdoutLine: {'line': b'[ 46%] Built target draco_compression_point_cloud_dec\n'}
+[16.162235] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_compression_point_cloud_enc\x1b[0m\n'}
+[16.178534] (-) TimerEvent: {}
+[16.198746] (draco) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_enc.dir/src/draco/compression/point_cloud/point_cloud_encoder.cc.o\x1b[0m\n'}
+[16.279052] (-) TimerEvent: {}
+[16.380300] (-) TimerEvent: {}
+[16.481426] (-) TimerEvent: {}
+[16.582788] (-) TimerEvent: {}
+[16.683974] (-) TimerEvent: {}
+[16.785161] (-) TimerEvent: {}
+[16.885718] (-) TimerEvent: {}
+[16.986399] (-) TimerEvent: {}
+[17.087091] (-) TimerEvent: {}
+[17.188267] (-) TimerEvent: {}
+[17.195326] (draco) StdoutLine: {'line': b'[ 47%] Built target draco_compression_attributes_dec\n'}
+[17.232227] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_core\x1b[0m\n'}
+[17.275591] (draco) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/bounding_box.cc.o\x1b[0m\n'}
+[17.288726] (-) TimerEvent: {}
+[17.389664] (-) TimerEvent: {}
+[17.490683] (-) TimerEvent: {}
+[17.591767] (-) TimerEvent: {}
+[17.692907] (-) TimerEvent: {}
+[17.794161] (-) TimerEvent: {}
+[17.895162] (-) TimerEvent: {}
+[17.996452] (-) TimerEvent: {}
+[18.030829] (draco) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/data_buffer.cc.o\x1b[0m\n'}
+[18.096769] (-) TimerEvent: {}
+[18.125525] (draco) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/decoder_buffer.cc.o\x1b[0m\n'}
+[18.197127] (-) TimerEvent: {}
+[18.297825] (-) TimerEvent: {}
+[18.398713] (-) TimerEvent: {}
+[18.500042] (-) TimerEvent: {}
+[18.601226] (-) TimerEvent: {}
+[18.702420] (-) TimerEvent: {}
+[18.803588] (-) TimerEvent: {}
+[18.805826] (draco) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/draco_types.cc.o\x1b[0m\n'}
+[18.874650] (draco) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_enc.dir/src/draco/compression/point_cloud/point_cloud_kd_tree_encoder.cc.o\x1b[0m\n'}
+[18.904492] (-) TimerEvent: {}
+[18.942648] (draco) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/encoder_buffer.cc.o\x1b[0m\n'}
+[19.005161] (-) TimerEvent: {}
+[19.105837] (-) TimerEvent: {}
+[19.185873] (draco) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/hash_utils.cc.o\x1b[0m\n'}
+[19.206172] (-) TimerEvent: {}
+[19.306879] (-) TimerEvent: {}
+[19.407800] (-) TimerEvent: {}
+[19.508882] (-) TimerEvent: {}
+[19.512888] (draco) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.cc:15\x1b[m\x1b[K:\n'}
+[19.513567] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:26:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[19.514053] (draco) StderrLine: {'line': b'   26 | \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K HashCombine(T1 a, T2 b) {\n'}
+[19.514811] (draco) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[19.515360] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:20:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[19.515661] (draco) StderrLine: {'line': b'   19 | #include <functional>\n'}
+[19.517653] (draco) StderrLine: {'line': b'  +++ |+\x1b[32m\x1b[K#include <cstddef>\x1b[m\x1b[K\n'}
+[19.518056] (draco) StderrLine: {'line': b'   20 | \n'}
+[19.518646] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:33:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[19.518896] (draco) StderrLine: {'line': b'   33 | \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K HashCombine(T a, size_t hash) {\n'}
+[19.519065] (draco) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[19.519697] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:33:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[19.520006] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:43:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[19.520304] (draco) StderrLine: {'line': b'   43 | uint64_t FingerprintString(const char *s, \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K len);\n'}
+[19.520587] (draco) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[19.520809] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:48:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[19.520993] (draco) StderrLine: {'line': b'   48 |   \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K operator()(const T &a) const {\n'}
+[19.521155] (draco) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[19.521296] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:48:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[19.521548] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:57:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[19.521715] (draco) StderrLine: {'line': b'   57 |   \x1b[01;31m\x1b[Ksize_t\x1b[m\x1b[K ValueHash(const V &val) const {\n'}
+[19.521884] (draco) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[19.522059] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:57:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 is defined in header \xe2\x80\x98\x1b[01m\x1b[K<cstddef>\x1b[m\x1b[K\xe2\x80\x99; did you forget to \xe2\x80\x98\x1b[01m\x1b[K#include <cstddef>\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[19.550288] (draco) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/draco_core.dir/build.make:188: CMakeFiles/draco_core.dir/src/draco/core/hash_utils.cc.o] Error 1\n'}
+[19.551358] (draco) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[19.577155] (draco) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_enc.dir/src/draco/compression/point_cloud/point_cloud_sequential_encoder.cc.o\x1b[0m\n'}
+[19.609435] (-) TimerEvent: {}
+[19.712516] (-) TimerEvent: {}
+[19.795160] (draco) StdoutLine: {'line': b'[ 55%] Built target draco_compression_entropy\n'}
+[19.813440] (-) TimerEvent: {}
+[19.839188] (draco) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target draco_io\x1b[0m\n'}
+[19.921081] (draco) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/file_utils.cc.o\x1b[0m\n'}
+[19.924332] (-) TimerEvent: {}
+[20.030629] (-) TimerEvent: {}
+[20.131702] (-) TimerEvent: {}
+[20.232972] (-) TimerEvent: {}
+[20.334201] (-) TimerEvent: {}
+[20.353325] (draco) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:563: CMakeFiles/draco_core.dir/all] Error 2\n'}
+[20.354377] (draco) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[20.375098] (draco) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/mesh_io.cc.o\x1b[0m\n'}
+[20.435240] (-) TimerEvent: {}
+[20.535987] (-) TimerEvent: {}
+[20.636841] (-) TimerEvent: {}
+[20.737712] (-) TimerEvent: {}
+[20.838659] (-) TimerEvent: {}
+[20.939591] (-) TimerEvent: {}
+[21.040917] (-) TimerEvent: {}
+[21.141933] (-) TimerEvent: {}
+[21.193619] (draco) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/obj_decoder.cc.o\x1b[0m\n'}
+[21.242709] (-) TimerEvent: {}
+[21.319943] (draco) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/obj_encoder.cc.o\x1b[0m\n'}
+[21.343547] (-) TimerEvent: {}
+[21.392066] (draco) StdoutLine: {'line': b'[ 59%] Built target draco_compression_mesh_dec\n'}
+[21.418611] (draco) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/parser_utils.cc.o\x1b[0m\n'}
+[21.446029] (-) TimerEvent: {}
+[21.546759] (-) TimerEvent: {}
+[21.647644] (-) TimerEvent: {}
+[21.748490] (-) TimerEvent: {}
+[21.850048] (-) TimerEvent: {}
+[21.951166] (-) TimerEvent: {}
+[22.055157] (-) TimerEvent: {}
+[22.155683] (-) TimerEvent: {}
+[22.237708] (draco) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_mesh_enc.dir/src/draco/compression/mesh/mesh_encoder.cc.o\x1b[0m\n'}
+[22.256308] (-) TimerEvent: {}
+[22.343011] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/io/parser_utils.cc:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool draco::parser::ParseFloat(draco::DecoderBuffer*, float*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[22.343780] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/io/parser_utils.cc:113:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knumeric_limits\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd\x1b[m\x1b[K\xe2\x80\x99\n'}
+[22.344085] (draco) StderrLine: {'line': b'  113 |       v = std::\x1b[01;31m\x1b[Knumeric_limits\x1b[m\x1b[K<double>::infinity();\n'}
+[22.344266] (draco) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[22.344432] (draco) StderrLine: {'line': b'\x1b[01m\x1b[K/root/home/point_cloud_transport_ws/src/draco/src/draco/io/parser_utils.cc:113:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[22.344632] (draco) StderrLine: {'line': b'  113 |       v = std::numeric_limits<\x1b[01;31m\x1b[Kdouble\x1b[m\x1b[K>::infinity();\n'}
+[22.344832] (draco) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[22.356840] (-) TimerEvent: {}
+[22.436802] (draco) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/draco_io.dir/build.make:132: CMakeFiles/draco_io.dir/src/draco/io/parser_utils.cc.o] Error 1\n'}
+[22.438703] (draco) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[22.457261] (-) TimerEvent: {}
+[22.466364] (draco) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/draco_compression_mesh_enc.dir/src/draco/compression/mesh/mesh_sequential_encoder.cc.o\x1b[0m\n'}
+[22.557604] (-) TimerEvent: {}
+[22.658492] (-) TimerEvent: {}
+[22.759431] (-) TimerEvent: {}
+[22.861559] (-) TimerEvent: {}
+[22.969627] (-) TimerEvent: {}
+[23.075836] (-) TimerEvent: {}
+[23.180325] (-) TimerEvent: {}
+[23.281834] (-) TimerEvent: {}
+[23.387143] (-) TimerEvent: {}
+[23.487916] (-) TimerEvent: {}
+[23.538839] (draco) StdoutLine: {'line': b'[ 62%] Built target draco_compression_point_cloud_enc\n'}
+[23.588371] (-) TimerEvent: {}
+[23.689419] (-) TimerEvent: {}
+[23.790664] (-) TimerEvent: {}
+[23.902854] (-) TimerEvent: {}
+[24.004553] (-) TimerEvent: {}
+[24.105202] (-) TimerEvent: {}
+[24.205879] (-) TimerEvent: {}
+[24.306530] (-) TimerEvent: {}
+[24.407393] (-) TimerEvent: {}
+[24.508212] (-) TimerEvent: {}
+[24.615561] (-) TimerEvent: {}
+[24.716468] (-) TimerEvent: {}
+[24.757289] (draco) StdoutLine: {'line': b'[ 62%] Built target draco_compression_attributes_enc\n'}
+[24.816895] (-) TimerEvent: {}
+[24.920225] (-) TimerEvent: {}
+[25.028754] (-) TimerEvent: {}
+[25.129799] (-) TimerEvent: {}
+[25.233375] (-) TimerEvent: {}
+[25.334739] (-) TimerEvent: {}
+[25.419641] (draco) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:589: CMakeFiles/draco_io.dir/all] Error 2\n'}
+[25.435024] (-) TimerEvent: {}
+[25.537443] (-) TimerEvent: {}
+[25.642124] (-) TimerEvent: {}
+[25.747885] (-) TimerEvent: {}
+[25.855883] (-) TimerEvent: {}
+[25.956565] (-) TimerEvent: {}
+[25.981011] (draco) StdoutLine: {'line': b'[ 62%] Built target draco_compression_mesh_enc\n'}
+[25.983068] (draco) StderrLine: {'line': b'gmake: *** [Makefile:136: all] Error 2\n'}
+[25.986755] (draco) CommandEnded: {'returncode': 2}
+[26.056850] (-) TimerEvent: {}
+[26.157527] (-) TimerEvent: {}
+[26.258218] (-) TimerEvent: {}
+[26.359401] (-) TimerEvent: {}
+[26.460805] (-) TimerEvent: {}
+[26.526124] (draco) JobEnded: {'identifier': 'draco', 'rc': 2}
+[26.537284] (point_cloud_transport) JobSkipped: {'identifier': 'point_cloud_transport'}
+[26.537683] (draco_point_cloud_transport) JobSkipped: {'identifier': 'draco_point_cloud_transport'}
+[26.537826] (point_cloud_transport_plugins) JobSkipped: {'identifier': 'point_cloud_transport_plugins'}
+[26.537933] (-) EventReactorShutdown: {}

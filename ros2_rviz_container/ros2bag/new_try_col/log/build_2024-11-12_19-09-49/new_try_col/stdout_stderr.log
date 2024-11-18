@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target draco_decoder_node[0m
+[ 50%] [32m[1mLinking CXX executable draco_decoder_node[0m
+/usr/bin/ld: CMakeFiles/draco_decoder_node.dir/src/draco_decoder_node.cpp.o: in function `draco::DecoderBuffer::~DecoderBuffer()':
+draco_decoder_node.cpp:(.text._ZN5draco13DecoderBufferD2Ev[_ZN5draco13DecoderBufferD5Ev]+0x1c): undefined reference to `draco::DecoderBuffer::BitDecoder::~BitDecoder()'
+/usr/bin/ld: CMakeFiles/draco_decoder_node.dir/src/draco_decoder_node.cpp.o: in function `DracoDecoderNode::dracoCallback(std::shared_ptr<std_msgs::msg::UInt8MultiArray_<std::allocator<void> > >)':
+draco_decoder_node.cpp:(.text._ZN16DracoDecoderNode13dracoCallbackESt10shared_ptrIN8std_msgs3msg16UInt8MultiArray_ISaIvEEEE[_ZN16DracoDecoderNode13dracoCallbackESt10shared_ptrIN8std_msgs3msg16UInt8MultiArray_ISaIvEEEE]+0x49): undefined reference to `draco::DecoderBuffer::DecoderBuffer()'
+/usr/bin/ld: draco_decoder_node.cpp:(.text._ZN16DracoDecoderNode13dracoCallbackESt10shared_ptrIN8std_msgs3msg16UInt8MultiArray_ISaIvEEEE[_ZN16DracoDecoderNode13dracoCallbackESt10shared_ptrIN8std_msgs3msg16UInt8MultiArray_ISaIvEEEE]+0x9a): undefined reference to `draco::DecoderBuffer::Init(char const*, unsigned long)'
+/usr/bin/ld: draco_decoder_node.cpp:(.text._ZN16DracoDecoderNode13dracoCallbackESt10shared_ptrIN8std_msgs3msg16UInt8MultiArray_ISaIvEEEE[_ZN16DracoDecoderNode13dracoCallbackESt10shared_ptrIN8std_msgs3msg16UInt8MultiArray_ISaIvEEEE]+0xba): undefined reference to `draco::Decoder::DecodePointCloudFromBuffer(draco::DecoderBuffer*)'
+/usr/bin/ld: CMakeFiles/draco_decoder_node.dir/src/draco_decoder_node.cpp.o: in function `DracoDecoderNode::convertDracoToPointCloud2(draco::PointCloud const*, sensor_msgs::msg::PointCloud2_<std::allocator<void> >&)':
+draco_decoder_node.cpp:(.text._ZN16DracoDecoderNode25convertDracoToPointCloud2EPKN5draco10PointCloudERN11sensor_msgs3msg12PointCloud2_ISaIvEEE[_ZN16DracoDecoderNode25convertDracoToPointCloud2EPKN5draco10PointCloudERN11sensor_msgs3msg12PointCloud2_ISaIvEEE]+0x7c): undefined reference to `draco::PointCloud::GetNamedAttributeId(draco::GeometryAttribute::Type) const'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/draco_decoder_node.dir/build.make:176: draco_decoder_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/draco_decoder_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

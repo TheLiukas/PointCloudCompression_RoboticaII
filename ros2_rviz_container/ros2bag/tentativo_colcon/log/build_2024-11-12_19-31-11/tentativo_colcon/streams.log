@@ -1,0 +1,70 @@
+[0.026s] Invoking command in '/root/home/tentativo_colcon/build/tentativo_colcon': /usr/bin/cmake /root/home/tentativo_colcon -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/root/home/tentativo_colcon/install/tentativo_colcon
+[0.107s] -- The C compiler identification is GNU 11.4.0
+[0.187s] -- The CXX compiler identification is GNU 11.4.0
+[0.196s] -- Detecting C compiler ABI info
+[0.290s] -- Detecting C compiler ABI info - done
+[0.302s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.303s] -- Detecting C compile features
+[0.303s] -- Detecting C compile features - done
+[0.308s] -- Detecting CXX compiler ABI info
+[0.423s] -- Detecting CXX compiler ABI info - done
+[0.433s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.433s] -- Detecting CXX compile features
+[0.433s] -- Detecting CXX compile features - done
+[0.441s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.658s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.814s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.899s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.909s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.926s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.949s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.979s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.062s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.068s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.226s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.279s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.365s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.382s] -- Looking for pthread.h
+[1.488s] -- Looking for pthread.h - found
+[1.488s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.594s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.596s] -- Found Threads: TRUE  
+[1.677s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.723s] -- Found point_cloud_transport: 1.0.18 (/opt/ros/humble/share/point_cloud_transport/cmake)
+[1.802s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[1.813s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.039s] -- Configuring done
+[2.065s] -- Generating done
+[2.067s] [33mCMake Warning:
+[2.067s]   Manually-specified variables were not used by the project:
+[2.067s] 
+[2.067s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[2.067s] 
+[2.068s] [0m
+[2.068s] -- Build files have been written to: /root/home/tentativo_colcon/build/tentativo_colcon
+[2.084s] Invoked command in '/root/home/tentativo_colcon/build/tentativo_colcon' returned '0': /usr/bin/cmake /root/home/tentativo_colcon -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/root/home/tentativo_colcon/install/tentativo_colcon
+[2.087s] Invoking command in '/root/home/tentativo_colcon/build/tentativo_colcon': /usr/bin/cmake --build /root/home/tentativo_colcon/build/tentativo_colcon -- -j8 -l8
+[2.157s] [ 50%] [32mBuilding CXX object CMakeFiles/draco_decoder_node.dir/src/draco_decoder_node.cpp.o[0m
+[15.333s] [100%] [32m[1mLinking CXX executable draco_decoder_node[0m
+[16.129s] [100%] Built target draco_decoder_node
+[16.146s] Invoked command in '/root/home/tentativo_colcon/build/tentativo_colcon' returned '0': /usr/bin/cmake --build /root/home/tentativo_colcon/build/tentativo_colcon -- -j8 -l8
+[16.235s] Invoking command in '/root/home/tentativo_colcon/build/tentativo_colcon': /usr/bin/cmake --install /root/home/tentativo_colcon/build/tentativo_colcon
+[16.246s] -- Install configuration: ""
+[16.247s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/lib/tentativo_colcon/draco_decoder_node
+[16.255s] -- Set runtime path of "/root/home/tentativo_colcon/install/tentativo_colcon/lib/tentativo_colcon/draco_decoder_node" to ""
+[16.256s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/ament_index/resource_index/package_run_dependencies/tentativo_colcon
+[16.257s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/ament_index/resource_index/parent_prefix_path/tentativo_colcon
+[16.258s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/environment/ament_prefix_path.sh
+[16.258s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/environment/ament_prefix_path.dsv
+[16.258s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/environment/path.sh
+[16.258s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/environment/path.dsv
+[16.259s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/local_setup.bash
+[16.259s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/local_setup.sh
+[16.259s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/local_setup.zsh
+[16.260s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/local_setup.dsv
+[16.260s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/package.dsv
+[16.261s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/ament_index/resource_index/packages/tentativo_colcon
+[16.261s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/cmake/tentativo_colconConfig.cmake
+[16.261s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/cmake/tentativo_colconConfig-version.cmake
+[16.262s] -- Installing: /root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/package.xml
+[16.265s] Invoked command in '/root/home/tentativo_colcon/build/tentativo_colcon' returned '0': /usr/bin/cmake --install /root/home/tentativo_colcon/build/tentativo_colcon

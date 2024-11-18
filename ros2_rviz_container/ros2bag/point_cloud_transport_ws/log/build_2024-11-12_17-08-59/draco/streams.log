@@ -1,0 +1,158 @@
+[0.044s] Invoking command in '/root/home/point_cloud_transport_ws/build/draco': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /root/home/point_cloud_transport_ws/src/draco -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/root/home/point_cloud_transport_ws/install/draco
+[0.338s] -- The C compiler identification is GNU 11.4.0
+[0.490s] -- The CXX compiler identification is GNU 11.4.0
+[0.507s] -- Detecting C compiler ABI info
+[0.620s] -- Detecting C compiler ABI info - done
+[0.631s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.632s] -- Detecting C compile features
+[0.632s] -- Detecting C compile features - done
+[0.638s] -- Detecting CXX compiler ABI info
+[0.755s] -- Detecting CXX compiler ABI info - done
+[0.765s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.765s] -- Detecting CXX compile features
+[0.766s] -- Detecting CXX compile features - done
+[0.775s] [0mChecking CXX compiler flag support for: -std=c++11[0m
+[0.776s] -- Performing Test HAVE_CXX_FLAG
+[0.888s] -- Performing Test HAVE_CXX_FLAG - Success
+[0.907s] -- Found Git: /usr/bin/git (found version "2.34.1") 
+[0.962s] -- Configuring done
+[1.100s] -- Generating done
+[1.107s] -- Build files have been written to: /root/home/point_cloud_transport_ws/build/draco
+[1.113s] Invoked command in '/root/home/point_cloud_transport_ws/build/draco' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake /root/home/point_cloud_transport_ws/src/draco -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/root/home/point_cloud_transport_ws/install/draco
+[1.118s] Invoking command in '/root/home/point_cloud_transport_ws/build/draco': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/home/point_cloud_transport_ws/build/draco -- -j8 -l8
+[1.196s] [  1%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/attributes_encoder.cc.o[0m
+[1.200s] [  2%] [32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/adaptive_rans_bit_decoder.cc.o[0m
+[1.201s] [  4%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_pred_schemes_enc.dir/src/draco/compression/attributes/prediction_schemes/prediction_scheme_encoder_factory.cc.o[0m
+[1.202s] [  4%] [32mBuilding CXX object CMakeFiles/draco_attributes.dir/src/draco/attributes/attribute_octahedron_transform.cc.o[0m
+[1.202s] [  5%] [32mBuilding CXX object CMakeFiles/draco_dec_config.dir/draco_dec_config.cc.o[0m
+[1.202s] [  6%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/attributes_decoder.cc.o[0m
+[1.208s] [  7%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_pred_schemes_dec.dir/draco_compression_attributes_pred_schemes_dec.cc.o[0m
+[1.224s] [  8%] [32mBuilding CXX object CMakeFiles/draco_enc_config.dir/draco_enc_config.cc.o[0m
+[1.276s] [  8%] Built target draco_enc_config
+[1.276s] [  8%] Built target draco_dec_config
+[1.279s] [  8%] Built target draco_compression_attributes_pred_schemes_dec
+[1.295s] [  9%] [32mBuilding CXX object CMakeFiles/draco_attributes.dir/src/draco/attributes/attribute_quantization_transform.cc.o[0m
+[1.297s] [ 10%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/kd_tree_attributes_encoder.cc.o[0m
+[1.324s] [ 10%] [32mBuilding CXX object CMakeFiles/draco_compression_decode.dir/src/draco/compression/decode.cc.o[0m
+[2.287s] [ 11%] [32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/adaptive_rans_bit_encoder.cc.o[0m
+[2.712s] [ 12%] [32mBuilding CXX object CMakeFiles/draco_attributes.dir/src/draco/attributes/attribute_transform.cc.o[0m
+[3.118s] [ 13%] [32mBuilding CXX object CMakeFiles/draco_attributes.dir/src/draco/attributes/geometry_attribute.cc.o[0m
+[3.132s] [ 14%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/sequential_attribute_encoder.cc.o[0m
+[3.217s] [ 15%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/kd_tree_attributes_decoder.cc.o[0m
+[3.344s] [ 15%] Built target draco_compression_attributes_pred_schemes_enc
+[3.400s] [ 16%] [32mBuilding CXX object CMakeFiles/draco_compression_encode.dir/src/draco/compression/encode.cc.o[0m
+[3.581s] [ 17%] [32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/direct_bit_decoder.cc.o[0m
+[3.854s] [ 18%] [32mBuilding CXX object CMakeFiles/draco_attributes.dir/src/draco/attributes/point_attribute.cc.o[0m
+[3.943s] [ 19%] [32mBuilding CXX object CMakeFiles/draco_compression_encode.dir/src/draco/compression/expert_encode.cc.o[0m
+[4.467s] [ 19%] Built target draco_compression_decode
+[4.491s] [ 20%] [32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/direct_bit_encoder.cc.o[0m
+[4.516s] [ 21%] [32mBuilding CXX object CMakeFiles/draco_compression_entropy.dir/src/draco/compression/entropy/shannon_entropy.cc.o[0m
+[5.054s] [ 22%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/sequential_attribute_encoders_controller.cc.o[0m
+[5.472s] [ 23%] [32mBuilding CXX object CMakeFiles/draco_compression_entropy.dir/src/draco/compression/entropy/symbol_decoding.cc.o[0m
+[5.556s] [ 24%] [32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/rans_bit_decoder.cc.o[0m
+[6.522s] [ 25%] [32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/rans_bit_encoder.cc.o[0m
+[7.219s] [ 26%] [32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/symbol_bit_decoder.cc.o[0m
+[7.942s] [ 27%] [32mBuilding CXX object CMakeFiles/draco_compression_bit_coders.dir/src/draco/compression/bit_coders/symbol_bit_encoder.cc.o[0m
+[8.047s] [ 27%] Built target draco_compression_encode
+[8.095s] [ 28%] [32mBuilding CXX object CMakeFiles/draco_compression_mesh_traverser.dir/draco_compression_mesh_traverser.cc.o[0m
+[8.149s] [ 28%] Built target draco_compression_mesh_traverser
+[8.199s] [ 29%] [32mBuilding CXX object CMakeFiles/draco_compression_mesh_dec.dir/src/draco/compression/mesh/mesh_decoder.cc.o[0m
+[8.226s] [ 30%] [32mBuilding CXX object CMakeFiles/draco_compression_mesh_dec.dir/src/draco/compression/mesh/mesh_edgebreaker_decoder.cc.o[0m
+[8.764s] [ 31%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/sequential_integer_attribute_encoder.cc.o[0m
+[9.148s] [ 31%] Built target draco_compression_bit_coders
+[9.198s] [ 32%] [32mBuilding CXX object CMakeFiles/draco_compression_mesh_enc.dir/src/draco/compression/mesh/mesh_edgebreaker_encoder.cc.o[0m
+[9.670s] [ 33%] [32mBuilding CXX object CMakeFiles/draco_compression_entropy.dir/src/draco/compression/entropy/symbol_encoding.cc.o[0m
+[9.861s] [ 34%] [32mBuilding CXX object CMakeFiles/draco_compression_mesh_dec.dir/src/draco/compression/mesh/mesh_edgebreaker_decoder_impl.cc.o[0m
+[10.493s] [ 35%] [32mBuilding CXX object CMakeFiles/draco_compression_mesh_dec.dir/src/draco/compression/mesh/mesh_sequential_decoder.cc.o[0m
+[10.591s] [ 36%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/sequential_normal_attribute_encoder.cc.o[0m
+[11.219s] [ 36%] Built target draco_attributes
+[11.276s] [ 37%] [32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_dec.dir/src/draco/compression/point_cloud/point_cloud_decoder.cc.o[0m
+[11.975s] [ 38%] [32mBuilding CXX object CMakeFiles/draco_compression_mesh_enc.dir/src/draco/compression/mesh/mesh_edgebreaker_encoder_impl.cc.o[0m
+[12.851s] [ 39%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/sequential_attribute_decoder.cc.o[0m
+[12.961s] [ 40%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/sequential_attribute_decoders_controller.cc.o[0m
+[13.726s] [ 41%] [32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_dec.dir/src/draco/compression/point_cloud/point_cloud_kd_tree_decoder.cc.o[0m
+[14.669s] [ 42%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/sequential_integer_attribute_decoder.cc.o[0m
+[15.561s] [ 43%] [32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_dec.dir/src/draco/compression/point_cloud/point_cloud_sequential_decoder.cc.o[0m
+[16.161s] [ 44%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/sequential_normal_attribute_decoder.cc.o[0m
+[17.357s] [ 45%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_enc.dir/src/draco/compression/attributes/sequential_quantization_attribute_encoder.cc.o[0m
+[17.373s] [ 46%] [32mBuilding CXX object CMakeFiles/draco_compression_attributes_dec.dir/src/draco/compression/attributes/sequential_quantization_attribute_decoder.cc.o[0m
+[17.666s] [ 46%] Built target draco_compression_point_cloud_dec
+[17.719s] [ 47%] [32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_enc.dir/src/draco/compression/point_cloud/point_cloud_encoder.cc.o[0m
+[19.192s] [ 48%] [32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_enc.dir/src/draco/compression/point_cloud/point_cloud_kd_tree_encoder.cc.o[0m
+[19.472s] [ 48%] Built target draco_compression_attributes_enc
+[19.522s] [ 49%] [32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/bit_utils.cc.o[0m
+[19.667s] [ 50%] [32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/bounding_box.cc.o[0m
+[20.458s] [ 51%] [32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/cycle_timer.cc.o[0m
+[20.534s] [ 51%] Built target draco_compression_entropy
+[20.535s] [ 52%] [32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/data_buffer.cc.o[0m
+[20.562s] [ 53%] [32mBuilding CXX object CMakeFiles/draco_compression_point_cloud_enc.dir/src/draco/compression/point_cloud/point_cloud_sequential_encoder.cc.o[0m
+[20.581s] [ 54%] [32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/file_utils.cc.o[0m
+[20.692s] [ 55%] [32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/mesh_io.cc.o[0m
+[21.202s] [ 56%] [32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/obj_decoder.cc.o[0m
+[21.269s] [ 57%] [32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/decoder_buffer.cc.o[0m
+[21.539s] [ 58%] [32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/obj_encoder.cc.o[0m
+[21.652s] [ 58%] Built target draco_compression_mesh_dec
+[21.701s] [ 59%] [32mBuilding CXX object CMakeFiles/draco_mesh.dir/src/draco/mesh/corner_table.cc.o[0m
+[22.097s] [ 60%] [32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/divide.cc.o[0m
+[22.166s] [ 61%] [32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/draco_types.cc.o[0m
+[22.258s] [ 61%] Built target draco_compression_attributes_dec
+[22.338s] [ 62%] [32mBuilding CXX object CMakeFiles/draco_metadata_dec.dir/src/draco/metadata/metadata_decoder.cc.o[0m
+[22.591s] [ 63%] [32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/encoder_buffer.cc.o[0m
+[22.910s] [ 63%] Built target draco_compression_point_cloud_enc
+[22.965s] [ 64%] [32mBuilding CXX object CMakeFiles/draco_metadata_enc.dir/src/draco/metadata/metadata_encoder.cc.o[0m
+[23.543s] [ 65%] [32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/parser_utils.cc.o[0m
+[23.703s] [ 66%] [32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/hash_utils.cc.o[0m
+[23.801s] [ 67%] [32mBuilding CXX object CMakeFiles/draco_compression_mesh_enc.dir/src/draco/compression/mesh/mesh_encoder.cc.o[0m
+[23.906s] In file included from [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.cc:15[m[K:
+[23.907s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:26:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ does not name a type
+[23.907s]    26 | [01;31m[Ksize_t[m[K HashCombine(T1 a, T2 b) {
+[23.907s]       | [01;31m[K^~~~~~[m[K
+[23.907s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:20:1:[m[K [01;36m[Knote: [m[K‘[01m[Ksize_t[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[23.908s]    19 | #include <functional>
+[23.908s]   +++ |+[32m[K#include <cstddef>[m[K
+[23.908s]    20 | 
+[23.908s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:33:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ does not name a type
+[23.909s]    33 | [01;31m[Ksize_t[m[K HashCombine(T a, size_t hash) {
+[23.909s]       | [01;31m[K^~~~~~[m[K
+[23.909s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:33:1:[m[K [01;36m[Knote: [m[K‘[01m[Ksize_t[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[23.909s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:43:43:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ has not been declared
+[23.910s]    43 | uint64_t FingerprintString(const char *s, [01;31m[Ksize_t[m[K len);
+[23.910s]       |                                           [01;31m[K^~~~~~[m[K
+[23.910s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:48:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ does not name a type
+[23.910s]    48 |   [01;31m[Ksize_t[m[K operator()(const T &a) const {
+[23.910s]       |   [01;31m[K^~~~~~[m[K
+[23.910s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:48:3:[m[K [01;36m[Knote: [m[K‘[01m[Ksize_t[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[23.910s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:57:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ does not name a type
+[23.911s]    57 |   [01;31m[Ksize_t[m[K ValueHash(const V &val) const {
+[23.911s]       |   [01;31m[K^~~~~~[m[K
+[23.911s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:57:3:[m[K [01;36m[Knote: [m[K‘[01m[Ksize_t[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[23.939s] gmake[2]: *** [CMakeFiles/draco_core.dir/build.make:188: CMakeFiles/draco_core.dir/src/draco/core/hash_utils.cc.o] Error 1
+[23.941s] gmake[1]: *** [CMakeFiles/Makefile2:563: CMakeFiles/draco_core.dir/all] Error 2
+[23.941s] gmake[1]: *** Waiting for unfinished jobs....
+[23.948s] [ 67%] Built target draco_metadata_dec
+[23.960s] [ 68%] [32mBuilding CXX object CMakeFiles/draco_compression_mesh_enc.dir/src/draco/compression/mesh/mesh_sequential_encoder.cc.o[0m
+[23.968s] [ 69%] [32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/ply_decoder.cc.o[0m
+[24.234s] [ 70%] [32mBuilding CXX object CMakeFiles/draco_mesh.dir/src/draco/mesh/mesh.cc.o[0m
+[24.399s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/io/parser_utils.cc:[m[K In function ‘[01m[Kbool draco::parser::ParseFloat(draco::DecoderBuffer*, float*)[m[K’:
+[24.399s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/io/parser_utils.cc:113:16:[m[K [01;31m[Kerror: [m[K‘[01m[Knumeric_limits[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[24.400s]   113 |       v = std::[01;31m[Knumeric_limits[m[K<double>::infinity();
+[24.400s]       |                [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.400s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/io/parser_utils.cc:113:31:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+[24.400s]   113 |       v = std::numeric_limits<[01;31m[Kdouble[m[K>::infinity();
+[24.400s]       |                               [01;31m[K^~~~~~[m[K
+[24.459s] [ 71%] [32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/ply_encoder.cc.o[0m
+[24.472s] [ 72%] [32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/ply_reader.cc.o[0m
+[24.525s] gmake[2]: *** [CMakeFiles/draco_io.dir/build.make:132: CMakeFiles/draco_io.dir/src/draco/io/parser_utils.cc.o] Error 1
+[24.525s] gmake[2]: *** Waiting for unfinished jobs....
+[24.567s] [ 73%] [32mBuilding CXX object CMakeFiles/draco_mesh.dir/src/draco/mesh/mesh_are_equivalent.cc.o[0m
+[24.817s] [ 73%] Built target draco_metadata_enc
+[24.839s] [ 74%] [32mBuilding CXX object CMakeFiles/draco_mesh.dir/src/draco/mesh/mesh_attribute_corner_table.cc.o[0m
+[25.905s] [ 75%] [32mBuilding CXX object CMakeFiles/draco_mesh.dir/src/draco/mesh/mesh_cleanup.cc.o[0m
+[26.280s] [ 76%] [32mBuilding CXX object CMakeFiles/draco_mesh.dir/src/draco/mesh/mesh_misc_functions.cc.o[0m
+[27.084s] [ 77%] [32mBuilding CXX object CMakeFiles/draco_mesh.dir/src/draco/mesh/mesh_stripifier.cc.o[0m
+[27.208s] [ 77%] Built target draco_compression_mesh_enc
+[27.229s] [ 78%] [32mBuilding CXX object CMakeFiles/draco_mesh.dir/src/draco/mesh/triangle_soup_mesh_builder.cc.o[0m
+[28.739s] gmake[1]: *** [CMakeFiles/Makefile2:589: CMakeFiles/draco_io.dir/all] Error 2
+[28.751s] [ 78%] Built target draco_mesh
+[28.753s] gmake: *** [Makefile:136: all] Error 2
+[28.756s] Invoked command in '/root/home/point_cloud_transport_ws/build/draco' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/home/point_cloud_transport_ws/build/draco -- -j8 -l8

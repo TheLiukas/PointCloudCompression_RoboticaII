@@ -1,0 +1,16 @@
+/root/home/tentativo_colcon/install/tentativo_colcon/lib/tentativo_colcon/draco_decoder_node
+/root/home/tentativo_colcon/install/tentativo_colcon/share/ament_index/resource_index/package_run_dependencies/tentativo_colcon
+/root/home/tentativo_colcon/install/tentativo_colcon/share/ament_index/resource_index/parent_prefix_path/tentativo_colcon
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/environment/ament_prefix_path.sh
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/environment/ament_prefix_path.dsv
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/environment/path.sh
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/environment/path.dsv
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/local_setup.bash
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/local_setup.sh
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/local_setup.zsh
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/local_setup.dsv
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/package.dsv
+/root/home/tentativo_colcon/install/tentativo_colcon/share/ament_index/resource_index/packages/tentativo_colcon
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/cmake/tentativo_colconConfig.cmake
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/cmake/tentativo_colconConfig-version.cmake
+/root/home/tentativo_colcon/install/tentativo_colcon/share/tentativo_colcon/package.xml

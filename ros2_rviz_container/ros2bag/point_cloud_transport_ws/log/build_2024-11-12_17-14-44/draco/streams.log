@@ -1,0 +1,91 @@
+[0.023s] Invoking command in '/root/home/point_cloud_transport_ws/build/draco': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/home/point_cloud_transport_ws/build/draco -- -j8 -l8
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_attributes_pred_schemes_dec[0m
+[0.085s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_attributes_pred_schemes_enc[0m
+[0.086s] [35m[1mConsolidate compiler generated dependencies of target draco_attributes[0m
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_attributes_dec[0m
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target draco_enc_config[0m
+[0.089s] [35m[1mConsolidate compiler generated dependencies of target draco_dec_config[0m
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_bit_coders[0m
+[0.092s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_attributes_enc[0m
+[0.112s] [  2%] Built target draco_enc_config
+[0.112s] [  2%] Built target draco_compression_attributes_pred_schemes_dec
+[0.115s] [  3%] Built target draco_dec_config
+[0.122s] [  4%] Built target draco_compression_attributes_pred_schemes_enc
+[0.132s] [  9%] Built target draco_attributes
+[0.135s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_decode[0m
+[0.137s] [ 23%] Built target draco_compression_bit_coders
+[0.137s] [ 24%] Built target draco_compression_attributes_dec
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_encode[0m
+[0.142s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_entropy[0m
+[0.143s] [ 31%] Built target draco_compression_attributes_enc
+[0.143s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_mesh_traverser[0m
+[0.161s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_mesh_dec[0m
+[0.162s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_point_cloud_dec[0m
+[0.168s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_mesh_enc[0m
+[0.168s] [ 31%] Built target draco_compression_decode
+[0.170s] [35m[1mConsolidate compiler generated dependencies of target draco_compression_point_cloud_enc[0m
+[0.172s] [ 32%] Built target draco_compression_mesh_traverser
+[0.176s] [ 34%] Built target draco_compression_encode
+[0.188s] [ 37%] Built target draco_compression_entropy
+[0.195s] [35m[1mConsolidate compiler generated dependencies of target draco_core[0m
+[0.201s] [35m[1mConsolidate compiler generated dependencies of target draco_io[0m
+[0.202s] [ 44%] Built target draco_compression_point_cloud_dec
+[0.203s] [ 44%] Built target draco_compression_mesh_dec
+[0.203s] [35m[1mConsolidate compiler generated dependencies of target draco_mesh[0m
+[0.205s] [ 47%] Built target draco_compression_point_cloud_enc
+[0.211s] [35m[1mConsolidate compiler generated dependencies of target draco_metadata_dec[0m
+[0.213s] [ 51%] Built target draco_compression_mesh_enc
+[0.233s] [35m[1mConsolidate compiler generated dependencies of target draco_metadata_enc[0m
+[0.237s] [ 52%] [32mBuilding CXX object CMakeFiles/draco_core.dir/src/draco/core/hash_utils.cc.o[0m
+[0.239s] [ 53%] Built target draco_metadata_dec
+[0.249s] [ 54%] [32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/parser_utils.cc.o[0m
+[0.252s] [ 57%] [32mBuilding CXX object CMakeFiles/draco_metadata.dir/src/draco/metadata/geometry_metadata.cc.o[0m
+[0.253s] [ 63%] Built target draco_mesh
+[0.256s] [ 64%] [32mBuilding CXX object CMakeFiles/draco_animation_dec.dir/src/draco/animation/keyframe_animation_decoder.cc.o[0m
+[0.259s] [ 65%] [32mBuilding CXX object CMakeFiles/draco_metadata.dir/src/draco/metadata/metadata.cc.o[0m
+[0.262s] [ 66%] [32mBuilding CXX object CMakeFiles/draco_animation_enc.dir/src/draco/animation/keyframe_animation_encoder.cc.o[0m
+[0.271s] [ 67%] Built target draco_metadata_enc
+[0.273s] [ 68%] [32mBuilding CXX object CMakeFiles/draco_io.dir/src/draco/io/point_cloud_io.cc.o[0m
+[0.319s] [ 69%] [32mBuilding CXX object CMakeFiles/draco_animation.dir/src/draco/animation/keyframe_animation.cc.o[0m
+[0.414s] In file included from [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.cc:15[m[K:
+[0.414s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:26:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ does not name a type
+[0.415s]    26 | [01;31m[Ksize_t[m[K HashCombine(T1 a, T2 b) {
+[0.415s]       | [01;31m[K^~~~~~[m[K
+[0.415s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:20:1:[m[K [01;36m[Knote: [m[K‘[01m[Ksize_t[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[0.415s]    19 | #include <functional>
+[0.415s]   +++ |+[32m[K#include <cstddef>[m[K
+[0.415s]    20 | 
+[0.416s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:33:1:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ does not name a type
+[0.416s]    33 | [01;31m[Ksize_t[m[K HashCombine(T a, size_t hash) {
+[0.416s]       | [01;31m[K^~~~~~[m[K
+[0.416s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:33:1:[m[K [01;36m[Knote: [m[K‘[01m[Ksize_t[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[0.417s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:43:43:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ has not been declared
+[0.417s]    43 | uint64_t FingerprintString(const char *s, [01;31m[Ksize_t[m[K len);
+[0.417s]       |                                           [01;31m[K^~~~~~[m[K
+[0.417s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:48:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ does not name a type
+[0.417s]    48 |   [01;31m[Ksize_t[m[K operator()(const T &a) const {
+[0.417s]       |   [01;31m[K^~~~~~[m[K
+[0.418s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:48:3:[m[K [01;36m[Knote: [m[K‘[01m[Ksize_t[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[0.418s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:57:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_t[m[K’ does not name a type
+[0.418s]    57 |   [01;31m[Ksize_t[m[K ValueHash(const V &val) const {
+[0.418s]       |   [01;31m[K^~~~~~[m[K
+[0.418s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/core/hash_utils.h:57:3:[m[K [01;36m[Knote: [m[K‘[01m[Ksize_t[m[K’ is defined in header ‘[01m[K<cstddef>[m[K’; did you forget to ‘[01m[K#include <cstddef>[m[K’?
+[0.444s] gmake[2]: *** [CMakeFiles/draco_core.dir/build.make:188: CMakeFiles/draco_core.dir/src/draco/core/hash_utils.cc.o] Error 1
+[0.445s] gmake[1]: *** [CMakeFiles/Makefile2:563: CMakeFiles/draco_core.dir/all] Error 2
+[0.445s] gmake[1]: *** Waiting for unfinished jobs....
+[0.948s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/io/parser_utils.cc:[m[K In function ‘[01m[Kbool draco::parser::ParseFloat(draco::DecoderBuffer*, float*)[m[K’:
+[0.949s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/io/parser_utils.cc:113:16:[m[K [01;31m[Kerror: [m[K‘[01m[Knumeric_limits[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[0.950s]   113 |       v = std::[01;31m[Knumeric_limits[m[K<double>::infinity();
+[0.951s]       |                [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.951s] [01m[K/root/home/point_cloud_transport_ws/src/draco/src/draco/io/parser_utils.cc:113:31:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+[0.952s]   113 |       v = std::numeric_limits<[01;31m[Kdouble[m[K>::infinity();
+[0.953s]       |                               [01;31m[K^~~~~~[m[K
+[1.013s] gmake[2]: *** [CMakeFiles/draco_io.dir/build.make:132: CMakeFiles/draco_io.dir/src/draco/io/parser_utils.cc.o] Error 1
+[1.014s] gmake[2]: *** Waiting for unfinished jobs....
+[1.616s] [ 69%] Built target draco_animation_dec
+[1.719s] [ 69%] Built target draco_animation_enc
+[1.757s] [ 69%] Built target draco_animation
+[2.007s] [ 69%] Built target draco_metadata
+[2.420s] gmake[1]: *** [CMakeFiles/Makefile2:589: CMakeFiles/draco_io.dir/all] Error 2
+[2.421s] gmake: *** [Makefile:136: all] Error 2
+[2.425s] Invoked command in '/root/home/point_cloud_transport_ws/build/draco' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /root/home/point_cloud_transport_ws/build/draco -- -j8 -l8

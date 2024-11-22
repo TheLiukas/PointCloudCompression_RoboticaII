@@ -171,12 +171,23 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
 # Set CMAKE_PREFIX_PATH for subsequent builds
 ENV CMAKE_PREFIX_PATH="/ros2_ws/install:$CMAKE_PREFIX_PATH"
 
-##Install ros-humble-grid-map RQT and Cyclone DDS
+# Install ros-humble-grid-map RQT and Cyclone DDS
 RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
   apt-get update -y || true && \
   apt-get install -y ros-humble-grid-map '~nros-humble-rqt*' ros-humble-rmw-cyclonedds-cpp && \
   echo export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp >> ~/.bashrc"
   
+## Install rosbag2pcd 
+WORKDIR /root/rosbag2pcd_ws/src
+RUN git clone https://github.com/xmfcx/rosbag2_to_pcd.git
+WORKDIR /root/rosbag2pcd_ws/
+RUN ls -lah 
+RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+  apt-get update -y || true && rosdep update && \
+  rosdep install --from-paths src --ignore-src -r -y && \
+  colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=1 && \
+  echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
+  source ~/.bashrc" 
 
 
   # Setup environment variables
@@ -186,5 +197,7 @@ RUN sudo chmod 755 /sbin/ros_entrypoint.sh
 
 
 ENTRYPOINT ["/sbin/ros_entrypoint.sh"]
+#Set entry dir
+WORKDIR /ros2_ws
 CMD ["bash"]
 

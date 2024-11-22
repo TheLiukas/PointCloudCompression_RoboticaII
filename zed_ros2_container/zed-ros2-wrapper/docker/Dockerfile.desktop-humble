@@ -134,6 +134,9 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
 
 WORKDIR /root/ros2_ws
 
+#Copy calibration file
+COPY zed_calibration/SN39574292.conf /usr/local/zed/settings/SN39574292.conf
+
 # Setup environment variables
 COPY ros_entrypoint.sh /sbin/ros_entrypoint.sh
 RUN ls -lah /sbin/

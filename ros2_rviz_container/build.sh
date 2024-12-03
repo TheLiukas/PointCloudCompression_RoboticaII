@@ -1,1 +1,1 @@
-sudo docker build -t ros2-rviz -f Dockerfile.ros2 .
+sudo docker build --progress=plain -t ros2-rviz -f Dockerfile.ros2 .

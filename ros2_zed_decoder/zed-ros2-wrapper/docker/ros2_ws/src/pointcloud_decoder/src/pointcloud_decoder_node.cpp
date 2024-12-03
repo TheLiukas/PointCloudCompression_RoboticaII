@@ -9,7 +9,7 @@ public:
     PointCloudDecoderNode() : Node("pointcloud_decoder_node") {
         // Initialize the subscription
         subscription_ = this->create_subscription<point_cloud_interfaces::msg::CompressedPointCloud2>(
-            "/zed/zed_node/point_cloud/cloud_registered/draco", 10,
+	"/zed/zed_node/mapping/fused_cloud/draco", 10,
             std::bind(&PointCloudDecoderNode::decode_callback, this, std::placeholders::_1));
 
         // Initialize the publisher

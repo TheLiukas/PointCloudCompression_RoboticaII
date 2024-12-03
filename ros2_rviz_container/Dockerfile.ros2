@@ -7,32 +7,70 @@ SHELL ["/bin/bash", "-c"]
 RUN apt update && apt upgrade -y && \
    apt install -y nano wget curl  
 
-WORKDIR /root/home/
+#install Cmake 3.24+
+RUN sudo apt-get update && \
+   sudo apt-get install ca-certificates gpg wget && \
+   test -f /usr/share/doc/kitware-archive-keyring/copyright || wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null && \
+   echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ jammy main' | sudo tee /etc/apt/sources.list.d/kitware.list >/dev/null && \
+   sudo apt-get update && \
+   sudo apt-get install -y kitware-archive-keyring && \
+   sudo apt-get install -y cmake
 
+#Install ASM_NASM compiler and clang c++ libraries
+RUN sudo apt-get install -y nasm && \
+    sudo apt install -y clang libc++-dev libc++abi-dev 
+   
+WORKDIR /root/ros2_ws/
+
+#install ros2 humble
 COPY zed2i.rviz ./zed2i.rviz
 RUN apt update && apt install -y ros-humble-desktop-full
 RUN apt-get install --no-install-recommends -y \
   ros-humble-image-transport \
   ros-humble-image-transport-plugins \
   ros-humble-point-cloud-transport \
-  ros-humble-point-cloud-interfaces
+  ros-humble-point-cloud-interfaces \
+  ros-humble-grid-map
 
+#install zed plugins for rviz, open3D and cloud map evaluation tool
 ENV TZ="Europe/Rome"
-RUN date
 WORKDIR /root/ros2_ws/src/
 RUN git clone https://github.com/stereolabs/zed-ros2-interfaces.git
 COPY ./rviz-plugin-zed-od/ ./rviz-plugin-zed-od/
 COPY ./zed_interfaces/ ./zed_interfaces/
-RUN ls -lah
 WORKDIR /root/ros2_ws/
+RUN git clone https://github.com/isl-org/Open3D.git &&\
+  cd Open3D && git checkout tags/v0.17.0 && mkdir build && cd build && \
+  cmake .. && \
+  make install
+#RUN git clone https://github.com/JokerJohn/Cloud_Map_Evaluation.git
 RUN ls -lah
+#COPY Cloud_Map_Evaluation/cloud_map_evaluation/src/cloud_map_eval_node.cpp ./Cloud_Map_Evaluation/cloud_map_evaluation/src/cloud_map_eval_node.cpp 
+COPY Cloud_Map_Evaluation ./Cloud_Map_Evaluation/
+RUN ls -lah
+RUN cd Cloud_Map_Evaluation/cloud_map_evaluation && ls -lah && mkdir build && \
+  cmake .
+RUN ls -lah  Cloud_Map_Evaluation/cloud_map_evaluation   
+RUN cd Cloud_Map_Evaluation/cloud_map_evaluation && make 
+  
+#sourcing
 RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
   apt-get update -y || true && rosdep update && \
   rosdep install --from-paths src --ignore-src -r -y && \
   colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release && \
   echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
   source ~/.bashrc" 
+RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash"
+
+## Install rosbag2pcd 
+WORKDIR /root/ros2_ws/src
+RUN git clone https://github.com/xmfcx/rosbag2_to_pcd.git
+WORKDIR /root/ros2_ws/
 RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
-  apt-get update -y || true && \
-  apt-get install -y ros-humble-grid-map"
-  
+  apt-get update -y || true && rosdep update && \
+  rosdep install --from-paths src --ignore-src -r -y && \
+  colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=1 && \
+  echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
+  source ~/.bashrc" 
+COPY ros2bag_to_pcd.sh /root/ros2_ws/src/rosbag2_to_pcd/ros2bag_to_pcd.sh
+

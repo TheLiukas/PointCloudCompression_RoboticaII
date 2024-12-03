@@ -43,7 +43,7 @@ RUN if [ "$(curl -I "${ZED_SDK_URL}" -o /dev/null -s -w '%{http_code}\n' | head 
     fi
 
 
-ENV TZ=Europe/Paris
+ENV TZ=Europe/Rome
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \ 
   apt-get update && \
@@ -113,6 +113,8 @@ ENV ROS_DISTRO ${ROS2_DIST}
 # Copy the sources in the Docker image
 WORKDIR /root/ros2_ws/src
 COPY tmp_sources/ ./
+# Modify the common.yaml file for fused point cloud enabling
+RUN awk '{sub(/mapping_enabled: false/, "mapping_enabled: true")}1' /root/ros2_ws/src/zed_wrapper/config/common.yaml > tmp && mv tmp /root/ros2_ws/src/zed_wrapper/config/common.yaml
 
 RUN ls -lah /root/ros2_ws/src/
 WORKDIR /root/ros2_ws/
@@ -142,8 +144,6 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
   colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=1 && \
   echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
   source ~/.bashrc" 
-
-
 
 #Copy calibration file
 COPY zed_calibration/SN39574292.conf /usr/local/zed/settings/SN39574292.conf

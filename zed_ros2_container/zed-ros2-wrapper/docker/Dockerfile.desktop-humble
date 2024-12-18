@@ -11,7 +11,7 @@ ARG IMAGE_NAME=nvcr.io/nvidia/cuda:${CUDA_MAJOR}.${CUDA_MINOR}.${CUDA_PATCH}-dev
 
 FROM ${IMAGE_NAME}
 
-ARG UBUNTU_MAJOR=22
+ARG UBUNTU_MAJOR=24
 ARG UBUNTU_MINOR=04
 ARG CUDA_MAJOR=12
 ARG CUDA_MINOR=4
@@ -20,7 +20,7 @@ ARG ZED_SDK_MAJOR=4
 ARG ZED_SDK_MINOR=1
 ARG ZED_SDK_PATCH=4
 
-ARG ROS2_DIST=humble       # ROS2 distribution
+ARG ROS2_DIST=jazzy       # ROS2 distribution
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -130,8 +130,8 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
   rm -rf /var/lib/apt/lists/*
 
 RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
-  apt update -y || true && sudo apt install -y '~nros-humble-rqt*' && \
-  sudo apt install -y ros-humble-rmw-cyclonedds-cpp && echo export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp >> ~/.bashrc"
+  apt update -y || true && sudo apt install -y '~nros-${ROS2_DIST}-rqt*' && \
+  sudo apt install -y ros-${ROS2_DIST}-rmw-cyclonedds-cpp && echo export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp >> ~/.bashrc"
 
 ## Install rosbag2pcd 
 WORKDIR /root/rosbag2pcd_ws/src

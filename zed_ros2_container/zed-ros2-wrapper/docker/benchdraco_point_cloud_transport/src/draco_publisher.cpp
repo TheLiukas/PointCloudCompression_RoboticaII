@@ -482,13 +482,12 @@ tl::expected<std::unique_ptr<draco::PointCloud>, std::string> DracoPublisher::co
 
 std::string DracoPublisher::getTransportName() const
 {
-  return "benchdraco";
+  return "bench";
 }
 
 DracoPublisher::TypedEncodeResult DracoPublisher::encodeTyped(
   const sensor_msgs::msg::PointCloud2 & raw) const
 {
-   std::ofstream outfile;
   auto t0 = std::chrono::high_resolution_clock::now();
 
   std::cout<<"In encode type: "<<base_topic_<<"\n" ; 

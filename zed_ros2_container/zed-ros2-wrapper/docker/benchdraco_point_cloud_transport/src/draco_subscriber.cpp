@@ -37,6 +37,7 @@
 #include <memory>
 #include <string>
 #include <vector>
+#include <chrono>
 
 #include <sensor_msgs/msg/point_cloud2.hpp>
 
@@ -137,21 +138,48 @@ tl::expected<bool, std::string> convertDracoToPC2(
   return true;
 }
 
+ std::string DracoSubscriber::getTopicToSubscribe(const std::string & base_topic) const
+  { 
+  return base_topic+"/"+"bench";
+  }
 std::string DracoSubscriber::getTransportName() const
 {
-  return "benchdraco";
+  return "bench";
 }
+/*std::string DracoSubscriber::getTopic() const{
+return base_topic+"/"+getTransportName();
+}*/
 
 DracoSubscriber::DecodeResult DracoSubscriber::decodeTyped(
   const benchdraco_point_cloud_interfaces::msg::BenchCompressedPointCloud2 & compressed) const
 {
   // get size of buffer with compressed data in Bytes
+   
   uint32_t compressed_data_size = static_cast<uint32_t>(compressed.compressed_data.size());
+  std::cout<<"Data size :" <<compressed_data_size/1024.0/1024.0 <<" MB"<<std::endl; 
 
   // empty buffer
   if (compressed_data_size == 0) {
     return tl::make_unexpected("Received compressed Draco message with zero length.");
   }
+
+  auto t0_dec = std::chrono::high_resolution_clock::now();
+  const std::chrono::high_resolution_clock::time_point::duration tt0 = t0_dec.time_since_epoch();
+	const int32_t tDurS0 = std::chrono::duration_cast<std::chrono::seconds>(tt0).count();
+  const uint32_t tDurN0 = std::chrono::duration_cast<std::chrono::nanoseconds>(tt0).count()-tDurS0*1.e9;
+  
+
+  int32_t encod_sec_diff=compressed.encoding_finish_timestamp.sec-compressed.encoding_start_timestamp.sec;
+  int32_t encod_nanosec_diff=compressed.encoding_finish_timestamp.nanosec-compressed.encoding_start_timestamp.nanosec;
+
+  int32_t trans_sec_diff=tDurS0-compressed.encoding_finish_timestamp.sec;
+  int32_t trans_nanosec_diff=tDurN0-compressed.encoding_finish_timestamp.nanosec;
+
+  double encoding=encod_sec_diff + encod_nanosec_diff/1.e9;
+  double transmission_time=trans_sec_diff + trans_nanosec_diff/1.e9;
+  std::cout<<"Encoding time: " <<encoding<<"s"<<std::endl;
+
+  std::cout<<"Transmission time: " <<transmission_time<<"s"<<std::endl;
 
   draco::DecoderBuffer decode_buffer;
   std::vector<unsigned char> vec_data = compressed.compressed_data;
@@ -195,7 +223,15 @@ DracoSubscriber::DecodeResult DracoSubscriber::decodeTyped(
   if (!convertRes) {
     return tl::make_unexpected(convertRes.error());
   }
-
+  auto t1_dec = std::chrono::high_resolution_clock::now();
+  const std::chrono::high_resolution_clock::time_point::duration tt1 = t1_dec.time_since_epoch();
+	const int32_t tDurS1 = std::chrono::duration_cast<std::chrono::seconds>(tt1).count();
+  const uint32_t tDurN1 = std::chrono::duration_cast<std::chrono::nanoseconds>(tt1).count()-tDurS1*1.e9;
+  int32_t decod_sec_diff=tDurS1-tDurS0;
+  int32_t decod_nanosec_diff=tDurN1-tDurN0;
+  double decoding_time=decod_sec_diff + decod_nanosec_diff/1.e9;
+  std::cout<<"Decoding time: " <<decoding_time<<std::endl;
+  std::cout<<"Total time: "<<encoding+transmission_time+decoding_time<<"s"<<std::endl;
   return message;
 }
 

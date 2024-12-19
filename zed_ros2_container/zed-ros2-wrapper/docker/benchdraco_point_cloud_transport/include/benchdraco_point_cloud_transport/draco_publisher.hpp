@@ -56,7 +56,7 @@ class DracoPublisher
     benchdraco_point_cloud_interfaces::msg::BenchCompressedPointCloud2>
 {
 public:
-  std::string getTransportName() const override;
+std::string getTransportName() const override;
 
   void declareParameters(const std::string & base_topic) override;
 
@@ -65,6 +65,7 @@ public:
     return "Benchdraco_point_cloud_transport/msg/BenchCompressedPointCloud2";
   }
 
+ 
   TypedEncodeResult encodeTyped(const sensor_msgs::msg::PointCloud2 & raw) const override;
 
   static void registerPositionField(const std::string & field);

@@ -50,7 +50,8 @@ class DracoSubscriber
 {
 public:
   std::string getTransportName() const override;
-
+  //std::string getTopic(const std::string & base_topic) const override;
+  std::string getTopicToSubscribe(const std::string & base_topic) const override;
   void declareParameters() override;
 
   std::string getDataType() const override

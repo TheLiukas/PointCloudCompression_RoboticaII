@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "benchdraco_point_cloud_interfaces__py",
+		"source" : "build/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces__py"
+	}
+}

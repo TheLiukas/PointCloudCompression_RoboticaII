@@ -1,0 +1,499 @@
+[0.000000] (-) TimerEvent: {}
+[0.000695] (-) JobUnselected: {'identifier': 'point_cloud_transport_py'}
+[0.000831] (point_cloud_transport) JobQueued: {'identifier': 'point_cloud_transport', 'dependencies': OrderedDict()}
+[0.000979] (point_cloud_transport) JobStarted: {'identifier': 'point_cloud_transport'}
+[0.015509] (point_cloud_transport) JobProgress: {'identifier': 'point_cloud_transport', 'progress': 'cmake'}
+[0.016005] (point_cloud_transport) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport', '-DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport'], 'cwd': '/root/ros2_ws/ros2bag/point_cloud_transport/build/point_cloud_transport', 'env': OrderedDict([('HOSTNAME', 'ros2plaincontainer'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/ros2bag'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/ros2_ws/ros2bag/point_cloud_transport/build/point_cloud_transport'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.087669] (point_cloud_transport) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099549] (-) TimerEvent: {}
+[0.191009] (point_cloud_transport) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.199676] (-) TimerEvent: {}
+[0.209920] (point_cloud_transport) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.297139] (point_cloud_transport) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.299726] (-) TimerEvent: {}
+[0.332775] (point_cloud_transport) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.333203] (point_cloud_transport) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.333715] (point_cloud_transport) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.338476] (point_cloud_transport) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399849] (-) TimerEvent: {}
+[0.447368] (point_cloud_transport) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.470341] (point_cloud_transport) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.470760] (point_cloud_transport) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.471452] (point_cloud_transport) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.481115] (point_cloud_transport) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.499997] (-) TimerEvent: {}
+[0.600377] (-) TimerEvent: {}
+[0.683725] (point_cloud_transport) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter\n'}
+[0.700514] (-) TimerEvent: {}
+[0.800981] (-) TimerEvent: {}
+[0.831999] (point_cloud_transport) StdoutLine: {'line': b'-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[0.899553] (point_cloud_transport) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.901051] (-) TimerEvent: {}
+[0.907469] (point_cloud_transport) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.920243] (point_cloud_transport) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.938718] (point_cloud_transport) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.963450] (point_cloud_transport) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.001177] (-) TimerEvent: {}
+[1.030807] (point_cloud_transport) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.035047] (point_cloud_transport) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.101295] (-) TimerEvent: {}
+[1.181782] (point_cloud_transport) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")\n'}
+[1.201406] (-) TimerEvent: {}
+[1.226721] (point_cloud_transport) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include\n'}
+[1.295258] (point_cloud_transport) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.301513] (-) TimerEvent: {}
+[1.308661] (point_cloud_transport) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.401680] (-) TimerEvent: {}
+[1.428605] (point_cloud_transport) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.431985] (point_cloud_transport) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[1.501787] (-) TimerEvent: {}
+[1.537963] (point_cloud_transport) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[1.583717] (point_cloud_transport) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[1.601896] (-) TimerEvent: {}
+[1.612923] (point_cloud_transport) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.665399] (point_cloud_transport) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.701985] (-) TimerEvent: {}
+[1.779293] (point_cloud_transport) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.802105] (-) TimerEvent: {}
+[1.808461] (point_cloud_transport) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.870039] (point_cloud_transport) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.870526] (point_cloud_transport) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport/include>\n'}
+[1.870758] (point_cloud_transport) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.902203] (-) TimerEvent: {}
+[1.931096] (point_cloud_transport) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.931343] (point_cloud_transport) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.939667] (point_cloud_transport) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.955466] (point_cloud_transport) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.963792] (point_cloud_transport) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.002314] (-) TimerEvent: {}
+[2.024503] (point_cloud_transport) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.024741] (point_cloud_transport) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.032794] (point_cloud_transport) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.036320] (point_cloud_transport) StdoutLine: {'line': b'-- Configuring done (2.0s)\n'}
+[2.102438] (-) TimerEvent: {}
+[2.130467] (point_cloud_transport) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[2.131060] (point_cloud_transport) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/ros2bag/point_cloud_transport/build/point_cloud_transport\n'}
+[2.147212] (point_cloud_transport) CommandEnded: {'returncode': 0}
+[2.148275] (point_cloud_transport) JobProgress: {'identifier': 'point_cloud_transport', 'progress': 'build'}
+[2.150158] (point_cloud_transport) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/ros2bag/point_cloud_transport/build/point_cloud_transport', '--', '-j8', '-l8'], 'cwd': '/root/ros2_ws/ros2bag/point_cloud_transport/build/point_cloud_transport', 'env': OrderedDict([('HOSTNAME', 'ros2plaincontainer'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/ros2bag'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/ros2_ws/ros2bag/point_cloud_transport/build/point_cloud_transport'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.202636] (-) TimerEvent: {}
+[2.215094] (point_cloud_transport) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/republish.dir/rclcpp_components/node_main_republish.cpp.o\x1b[0m\n'}
+[2.215358] (point_cloud_transport) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[2.215472] (point_cloud_transport) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[2.217488] (point_cloud_transport) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport.dir/src/point_cloud_codec.cpp.o\x1b[0m\n'}
+[2.217790] (point_cloud_transport) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport.dir/src/point_cloud_transport.cpp.o\x1b[0m\n'}
+[2.217908] (point_cloud_transport) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport.dir/src/point_cloud_common.cpp.o\x1b[0m\n'}
+[2.218235] (point_cloud_transport) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport.dir/src/publisher.cpp.o\x1b[0m\n'}
+[2.220734] (point_cloud_transport) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport.dir/src/publisher_plugin.cpp.o\x1b[0m\n'}
+[2.304667] (-) TimerEvent: {}
+[2.405011] (-) TimerEvent: {}
+[2.505378] (-) TimerEvent: {}
+[2.605767] (-) TimerEvent: {}
+[2.706154] (-) TimerEvent: {}
+[2.750404] (point_cloud_transport) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport.dir/src/raw_subscriber.cpp.o\x1b[0m\n'}
+[2.809798] (-) TimerEvent: {}
+[2.910389] (-) TimerEvent: {}
+[3.010881] (-) TimerEvent: {}
+[3.111309] (-) TimerEvent: {}
+[3.211777] (-) TimerEvent: {}
+[3.312179] (-) TimerEvent: {}
+[3.412614] (-) TimerEvent: {}
+[3.513033] (-) TimerEvent: {}
+[3.615843] (-) TimerEvent: {}
+[3.716300] (-) TimerEvent: {}
+[3.816684] (-) TimerEvent: {}
+[3.917104] (-) TimerEvent: {}
+[4.017502] (-) TimerEvent: {}
+[4.117884] (-) TimerEvent: {}
+[4.219670] (-) TimerEvent: {}
+[4.320039] (-) TimerEvent: {}
+[4.382742] (point_cloud_transport) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[4.420824] (-) TimerEvent: {}
+[4.505556] (point_cloud_transport) StdoutLine: {'line': b'[ 25%] Built target gtest_main\n'}
+[4.517607] (point_cloud_transport) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport.dir/src/single_subscriber_publisher.cpp.o\x1b[0m\n'}
+[4.520874] (-) TimerEvent: {}
+[4.621250] (-) TimerEvent: {}
+[4.721647] (-) TimerEvent: {}
+[4.822017] (-) TimerEvent: {}
+[4.922392] (-) TimerEvent: {}
+[5.026693] (-) TimerEvent: {}
+[5.127422] (-) TimerEvent: {}
+[5.227842] (-) TimerEvent: {}
+[5.328254] (-) TimerEvent: {}
+[5.428668] (-) TimerEvent: {}
+[5.529072] (-) TimerEvent: {}
+[5.629488] (-) TimerEvent: {}
+[5.729916] (-) TimerEvent: {}
+[5.830531] (-) TimerEvent: {}
+[5.931668] (-) TimerEvent: {}
+[5.974739] (point_cloud_transport) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport.dir/src/subscriber.cpp.o\x1b[0m\n'}
+[6.033673] (-) TimerEvent: {}
+[6.134034] (-) TimerEvent: {}
+[6.234406] (-) TimerEvent: {}
+[6.334782] (-) TimerEvent: {}
+[6.435140] (-) TimerEvent: {}
+[6.535497] (-) TimerEvent: {}
+[6.637661] (-) TimerEvent: {}
+[6.738017] (-) TimerEvent: {}
+[6.838415] (-) TimerEvent: {}
+[6.938943] (-) TimerEvent: {}
+[7.039349] (-) TimerEvent: {}
+[7.143756] (-) TimerEvent: {}
+[7.244473] (-) TimerEvent: {}
+[7.345113] (-) TimerEvent: {}
+[7.445549] (-) TimerEvent: {}
+[7.546180] (-) TimerEvent: {}
+[7.646770] (-) TimerEvent: {}
+[7.747403] (-) TimerEvent: {}
+[7.848660] (-) TimerEvent: {}
+[7.949149] (-) TimerEvent: {}
+[8.052673] (-) TimerEvent: {}
+[8.153076] (-) TimerEvent: {}
+[8.253482] (-) TimerEvent: {}
+[8.353912] (-) TimerEvent: {}
+[8.454313] (-) TimerEvent: {}
+[8.554684] (-) TimerEvent: {}
+[8.655233] (-) TimerEvent: {}
+[8.755633] (-) TimerEvent: {}
+[8.858662] (-) TimerEvent: {}
+[8.919096] (point_cloud_transport) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX executable republish\x1b[0m\n'}
+[8.958815] (-) TimerEvent: {}
+[9.059274] (-) TimerEvent: {}
+[9.076013] (point_cloud_transport) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[9.145621] (point_cloud_transport) StdoutLine: {'line': b'[ 35%] Built target republish\n'}
+[9.159391] (-) TimerEvent: {}
+[9.199850] (point_cloud_transport) StdoutLine: {'line': b'[ 35%] Built target gtest\n'}
+[9.259537] (-) TimerEvent: {}
+[9.359918] (-) TimerEvent: {}
+[9.460294] (-) TimerEvent: {}
+[9.560656] (-) TimerEvent: {}
+[9.661045] (-) TimerEvent: {}
+[9.761418] (-) TimerEvent: {}
+[9.861818] (-) TimerEvent: {}
+[9.962196] (-) TimerEvent: {}
+[10.062594] (-) TimerEvent: {}
+[10.162947] (-) TimerEvent: {}
+[10.263332] (-) TimerEvent: {}
+[10.363673] (-) TimerEvent: {}
+[10.464046] (-) TimerEvent: {}
+[10.564405] (-) TimerEvent: {}
+[10.664796] (-) TimerEvent: {}
+[10.765179] (-) TimerEvent: {}
+[10.865633] (-) TimerEvent: {}
+[10.966003] (-) TimerEvent: {}
+[11.066383] (-) TimerEvent: {}
+[11.166822] (-) TimerEvent: {}
+[11.267221] (-) TimerEvent: {}
+[11.367631] (-) TimerEvent: {}
+[11.468058] (-) TimerEvent: {}
+[11.568479] (-) TimerEvent: {}
+[11.669038] (-) TimerEvent: {}
+[11.769450] (-) TimerEvent: {}
+[11.869889] (-) TimerEvent: {}
+[11.970301] (-) TimerEvent: {}
+[12.070669] (-) TimerEvent: {}
+[12.171065] (-) TimerEvent: {}
+[12.271466] (-) TimerEvent: {}
+[12.371872] (-) TimerEvent: {}
+[12.472249] (-) TimerEvent: {}
+[12.572660] (-) TimerEvent: {}
+[12.672966] (-) TimerEvent: {}
+[12.773455] (-) TimerEvent: {}
+[12.874004] (-) TimerEvent: {}
+[12.974411] (-) TimerEvent: {}
+[13.074807] (-) TimerEvent: {}
+[13.175142] (-) TimerEvent: {}
+[13.275566] (-) TimerEvent: {}
+[13.375984] (-) TimerEvent: {}
+[13.476397] (-) TimerEvent: {}
+[13.576874] (-) TimerEvent: {}
+[13.677285] (-) TimerEvent: {}
+[13.777702] (-) TimerEvent: {}
+[13.866039] (point_cloud_transport) StdoutLine: {'line': b'[ 38%] \x1b[32m\x1b[1mLinking CXX shared library libpoint_cloud_transport.so\x1b[0m\n'}
+[13.877783] (-) TimerEvent: {}
+[13.978098] (-) TimerEvent: {}
+[14.078462] (-) TimerEvent: {}
+[14.178886] (-) TimerEvent: {}
+[14.279346] (-) TimerEvent: {}
+[14.380363] (-) TimerEvent: {}
+[14.480793] (-) TimerEvent: {}
+[14.581200] (-) TimerEvent: {}
+[14.681635] (-) TimerEvent: {}
+[14.740232] (point_cloud_transport) StdoutLine: {'line': b'[ 38%] Built target point_cloud_transport\n'}
+[14.761751] (point_cloud_transport) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport-point_cloud_common.dir/test/test_point_cloud_common.cpp.o\x1b[0m\n'}
+[14.761993] (point_cloud_transport) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport_plugins.dir/src/manifest.cpp.o\x1b[0m\n'}
+[14.762091] (point_cloud_transport) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport-message_passing.dir/test/test_message_passing.cpp.o\x1b[0m\n'}
+[14.762186] (point_cloud_transport) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/pc_republish_node.dir/src/republish.cpp.o\x1b[0m\n'}
+[14.763333] (point_cloud_transport) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport-publisher.dir/test/test_publisher.cpp.o\x1b[0m\n'}
+[14.763556] (point_cloud_transport) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/list_transports.dir/src/list_transports.cpp.o\x1b[0m\n'}
+[14.769663] (point_cloud_transport) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport-subscriber.dir/test/test_subscriber.cpp.o\x1b[0m\n'}
+[14.770160] (point_cloud_transport) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport-codec.dir/test/test_point_cloud_codec.cpp.o\x1b[0m\n'}
+[14.783664] (-) TimerEvent: {}
+[14.884109] (-) TimerEvent: {}
+[14.984488] (-) TimerEvent: {}
+[15.084851] (-) TimerEvent: {}
+[15.185415] (-) TimerEvent: {}
+[15.289666] (-) TimerEvent: {}
+[15.390288] (-) TimerEvent: {}
+[15.490914] (-) TimerEvent: {}
+[15.591626] (-) TimerEvent: {}
+[15.692113] (-) TimerEvent: {}
+[15.792652] (-) TimerEvent: {}
+[15.893022] (-) TimerEvent: {}
+[15.993456] (-) TimerEvent: {}
+[16.094677] (-) TimerEvent: {}
+[16.195052] (-) TimerEvent: {}
+[16.298671] (-) TimerEvent: {}
+[16.399060] (-) TimerEvent: {}
+[16.499457] (-) TimerEvent: {}
+[16.599857] (-) TimerEvent: {}
+[16.700248] (-) TimerEvent: {}
+[16.800690] (-) TimerEvent: {}
+[16.901144] (-) TimerEvent: {}
+[17.001615] (-) TimerEvent: {}
+[17.104680] (-) TimerEvent: {}
+[17.205143] (-) TimerEvent: {}
+[17.305599] (-) TimerEvent: {}
+[17.325696] (point_cloud_transport) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX executable point_cloud_transport-point_cloud_common\x1b[0m\n'}
+[17.405701] (-) TimerEvent: {}
+[17.506240] (-) TimerEvent: {}
+[17.606851] (-) TimerEvent: {}
+[17.707662] (-) TimerEvent: {}
+[17.810673] (-) TimerEvent: {}
+[17.911110] (-) TimerEvent: {}
+[18.011592] (-) TimerEvent: {}
+[18.112048] (-) TimerEvent: {}
+[18.212455] (-) TimerEvent: {}
+[18.312889] (-) TimerEvent: {}
+[18.349486] (point_cloud_transport) StdoutLine: {'line': b'[ 61%] Built target point_cloud_transport-point_cloud_common\n'}
+[18.378173] (point_cloud_transport) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport-qos_override.dir/test/test_qos_override.cpp.o\x1b[0m\n'}
+[18.413022] (-) TimerEvent: {}
+[18.514666] (-) TimerEvent: {}
+[18.615058] (-) TimerEvent: {}
+[18.715450] (-) TimerEvent: {}
+[18.815896] (-) TimerEvent: {}
+[18.917677] (-) TimerEvent: {}
+[19.018068] (-) TimerEvent: {}
+[19.118475] (-) TimerEvent: {}
+[19.219002] (-) TimerEvent: {}
+[19.322890] (-) TimerEvent: {}
+[19.423337] (-) TimerEvent: {}
+[19.523788] (-) TimerEvent: {}
+[19.624242] (-) TimerEvent: {}
+[19.724684] (-) TimerEvent: {}
+[19.825088] (-) TimerEvent: {}
+[19.925510] (-) TimerEvent: {}
+[20.027680] (-) TimerEvent: {}
+[20.128082] (-) TimerEvent: {}
+[20.228521] (-) TimerEvent: {}
+[20.328938] (-) TimerEvent: {}
+[20.429347] (-) TimerEvent: {}
+[20.531525] (-) TimerEvent: {}
+[20.631984] (-) TimerEvent: {}
+[20.732661] (-) TimerEvent: {}
+[20.833251] (-) TimerEvent: {}
+[20.934996] (-) TimerEvent: {}
+[21.035387] (-) TimerEvent: {}
+[21.135793] (-) TimerEvent: {}
+[21.237668] (-) TimerEvent: {}
+[21.338080] (-) TimerEvent: {}
+[21.438616] (-) TimerEvent: {}
+[21.540795] (-) TimerEvent: {}
+[21.641361] (-) TimerEvent: {}
+[21.741947] (-) TimerEvent: {}
+[21.843698] (-) TimerEvent: {}
+[21.944213] (-) TimerEvent: {}
+[22.046687] (-) TimerEvent: {}
+[22.147159] (-) TimerEvent: {}
+[22.247652] (-) TimerEvent: {}
+[22.348075] (-) TimerEvent: {}
+[22.448514] (-) TimerEvent: {}
+[22.552671] (-) TimerEvent: {}
+[22.653063] (-) TimerEvent: {}
+[22.753462] (-) TimerEvent: {}
+[22.853868] (-) TimerEvent: {}
+[22.954270] (-) TimerEvent: {}
+[23.054670] (-) TimerEvent: {}
+[23.155079] (-) TimerEvent: {}
+[23.255481] (-) TimerEvent: {}
+[23.356078] (-) TimerEvent: {}
+[23.456433] (-) TimerEvent: {}
+[23.556838] (-) TimerEvent: {}
+[23.658668] (-) TimerEvent: {}
+[23.663603] (point_cloud_transport) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable point_cloud_transport-subscriber\x1b[0m\n'}
+[23.712877] (point_cloud_transport) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX executable point_cloud_transport-publisher\x1b[0m\n'}
+[23.758809] (-) TimerEvent: {}
+[23.859432] (-) TimerEvent: {}
+[23.961772] (-) TimerEvent: {}
+[24.062276] (-) TimerEvent: {}
+[24.164686] (-) TimerEvent: {}
+[24.265623] (-) TimerEvent: {}
+[24.336028] (point_cloud_transport) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable point_cloud_transport-message_passing\x1b[0m\n'}
+[24.365827] (-) TimerEvent: {}
+[24.466409] (-) TimerEvent: {}
+[24.568281] (-) TimerEvent: {}
+[24.578749] (point_cloud_transport) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libpc_republish_node.so\x1b[0m\n'}
+[24.672688] (-) TimerEvent: {}
+[24.756551] (point_cloud_transport) StdoutLine: {'line': b'[ 74%] Built target point_cloud_transport-subscriber\n'}
+[24.772815] (-) TimerEvent: {}
+[24.780036] (point_cloud_transport) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport-remapping.dir/test/test_remapping.cpp.o\x1b[0m\n'}
+[24.813281] (point_cloud_transport) StdoutLine: {'line': b'[ 76%] Built target point_cloud_transport-publisher\n'}
+[24.839758] (point_cloud_transport) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport-message-filter.dir/test/test_message_filter.cpp.o\x1b[0m\n'}
+[24.872957] (-) TimerEvent: {}
+[24.973379] (-) TimerEvent: {}
+[25.073766] (-) TimerEvent: {}
+[25.174131] (-) TimerEvent: {}
+[25.274502] (-) TimerEvent: {}
+[25.362909] (point_cloud_transport) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX executable list_transports\x1b[0m\n'}
+[25.374661] (-) TimerEvent: {}
+[25.390266] (point_cloud_transport) StdoutLine: {'line': b'[ 82%] Built target pc_republish_node\n'}
+[25.414720] (point_cloud_transport) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/point_cloud_transport-single_subscriber_publisher.dir/test/test_single_subscriber_publisher.cpp.o\x1b[0m\n'}
+[25.460717] (point_cloud_transport) StdoutLine: {'line': b'[ 84%] Built target point_cloud_transport-message_passing\n'}
+[25.477695] (-) TimerEvent: {}
+[25.578194] (-) TimerEvent: {}
+[25.599466] (point_cloud_transport) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable point_cloud_transport-codec\x1b[0m\n'}
+[25.678365] (-) TimerEvent: {}
+[25.778980] (-) TimerEvent: {}
+[25.879498] (-) TimerEvent: {}
+[25.980691] (-) TimerEvent: {}
+[26.081277] (-) TimerEvent: {}
+[26.181715] (-) TimerEvent: {}
+[26.282955] (-) TimerEvent: {}
+[26.293981] (point_cloud_transport) StdoutLine: {'line': b'[ 87%] Built target list_transports\n'}
+[26.383101] (-) TimerEvent: {}
+[26.401615] (point_cloud_transport) StdoutLine: {'line': b'[ 87%] Built target point_cloud_transport-codec\n'}
+[26.483240] (-) TimerEvent: {}
+[26.583658] (-) TimerEvent: {}
+[26.684037] (-) TimerEvent: {}
+[26.784464] (-) TimerEvent: {}
+[26.884871] (-) TimerEvent: {}
+[26.985269] (-) TimerEvent: {}
+[27.085668] (-) TimerEvent: {}
+[27.186127] (-) TimerEvent: {}
+[27.286507] (-) TimerEvent: {}
+[27.386917] (-) TimerEvent: {}
+[27.412292] (point_cloud_transport) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX executable point_cloud_transport-qos_override\x1b[0m\n'}
+[27.487121] (-) TimerEvent: {}
+[27.587668] (-) TimerEvent: {}
+[27.688075] (-) TimerEvent: {}
+[27.788465] (-) TimerEvent: {}
+[27.888852] (-) TimerEvent: {}
+[27.989225] (-) TimerEvent: {}
+[28.089598] (-) TimerEvent: {}
+[28.139881] (point_cloud_transport) StdoutLine: {'line': b'[ 89%] Built target point_cloud_transport-qos_override\n'}
+[28.189693] (-) TimerEvent: {}
+[28.290081] (-) TimerEvent: {}
+[28.390462] (-) TimerEvent: {}
+[28.490911] (-) TimerEvent: {}
+[28.591654] (-) TimerEvent: {}
+[28.692114] (-) TimerEvent: {}
+[28.792492] (-) TimerEvent: {}
+[28.892871] (-) TimerEvent: {}
+[28.993242] (-) TimerEvent: {}
+[29.093637] (-) TimerEvent: {}
+[29.194008] (-) TimerEvent: {}
+[29.294396] (-) TimerEvent: {}
+[29.394820] (-) TimerEvent: {}
+[29.495225] (-) TimerEvent: {}
+[29.595820] (-) TimerEvent: {}
+[29.696212] (-) TimerEvent: {}
+[29.796623] (-) TimerEvent: {}
+[29.897038] (-) TimerEvent: {}
+[29.997468] (-) TimerEvent: {}
+[30.097890] (-) TimerEvent: {}
+[30.198308] (-) TimerEvent: {}
+[30.298795] (-) TimerEvent: {}
+[30.399308] (-) TimerEvent: {}
+[30.499750] (-) TimerEvent: {}
+[30.600140] (-) TimerEvent: {}
+[30.633170] (point_cloud_transport) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable point_cloud_transport-message-filter\x1b[0m\n'}
+[30.700386] (-) TimerEvent: {}
+[30.800879] (-) TimerEvent: {}
+[30.901268] (-) TimerEvent: {}
+[30.960423] (point_cloud_transport) StdoutLine: {'line': b'[ 92%] Built target point_cloud_transport-message-filter\n'}
+[31.001395] (-) TimerEvent: {}
+[31.101779] (-) TimerEvent: {}
+[31.202157] (-) TimerEvent: {}
+[31.302537] (-) TimerEvent: {}
+[31.403187] (-) TimerEvent: {}
+[31.452470] (point_cloud_transport) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable point_cloud_transport-remapping\x1b[0m\n'}
+[31.503286] (-) TimerEvent: {}
+[31.569613] (point_cloud_transport) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX shared library libpoint_cloud_transport_plugins.so\x1b[0m\n'}
+[31.603452] (-) TimerEvent: {}
+[31.703959] (-) TimerEvent: {}
+[31.740505] (point_cloud_transport) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable point_cloud_transport-single_subscriber_publisher\x1b[0m\n'}
+[31.804066] (-) TimerEvent: {}
+[31.904482] (-) TimerEvent: {}
+[32.004930] (-) TimerEvent: {}
+[32.105368] (-) TimerEvent: {}
+[32.154696] (point_cloud_transport) StdoutLine: {'line': b'[100%] Built target point_cloud_transport-remapping\n'}
+[32.205490] (-) TimerEvent: {}
+[32.305867] (-) TimerEvent: {}
+[32.379681] (point_cloud_transport) StdoutLine: {'line': b'[100%] Built target point_cloud_transport-single_subscriber_publisher\n'}
+[32.405977] (-) TimerEvent: {}
+[32.430467] (point_cloud_transport) StdoutLine: {'line': b'[100%] Built target point_cloud_transport_plugins\n'}
+[32.441434] (point_cloud_transport) CommandEnded: {'returncode': 0}
+[32.506069] (-) TimerEvent: {}
+[32.566562] (point_cloud_transport) JobProgress: {'identifier': 'point_cloud_transport', 'progress': 'install'}
+[32.577402] (point_cloud_transport) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/ros2bag/point_cloud_transport/build/point_cloud_transport'], 'cwd': '/root/ros2_ws/ros2bag/point_cloud_transport/build/point_cloud_transport', 'env': OrderedDict([('HOSTNAME', 'ros2plaincontainer'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws/ros2bag'), ('ROS_PYTHON_VERSION', '3'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('XAUTHORITY', '/root/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('PWD', '/root/ros2_ws/ros2bag/point_cloud_transport/build/point_cloud_transport'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[32.589485] (point_cloud_transport) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[32.590189] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/point_cloud_transport/republish\n'}
+[32.592534] (point_cloud_transport) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/point_cloud_transport/republish" to ""\n'}
+[32.593199] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/default_plugins.xml\n'}
+[32.593993] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/libpoint_cloud_transport.so\n'}
+[32.605204] (point_cloud_transport) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/libpoint_cloud_transport.so" to ""\n'}
+[32.605470] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/libpoint_cloud_transport_plugins.so\n'}
+[32.606141] (-) TimerEvent: {}
+[32.614115] (point_cloud_transport) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/libpoint_cloud_transport_plugins.so" to ""\n'}
+[32.614440] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/libpc_republish_node.so\n'}
+[32.615673] (point_cloud_transport) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/libpc_republish_node.so" to ""\n'}
+[32.615924] (point_cloud_transport) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/libpoint_cloud_transport.so\n'}
+[32.616202] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/point_cloud_transport/list_transports\n'}
+[32.618832] (point_cloud_transport) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/lib/point_cloud_transport/list_transports" to ""\n'}
+[32.619163] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport\n'}
+[32.619358] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport\n'}
+[32.619514] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/point_cloud_common.hpp\n'}
+[32.619673] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/transport_hints.hpp\n'}
+[32.619785] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/raw_publisher.hpp\n'}
+[32.619874] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/visibility_control.hpp\n'}
+[32.620006] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/point_cloud_codec.hpp\n'}
+[32.620157] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/exception.hpp\n'}
+[32.620348] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/single_subscriber_publisher.hpp\n'}
+[32.620538] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/loader_fwds.hpp\n'}
+[32.620743] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/publisher.hpp\n'}
+[32.620942] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/raw_subscriber.hpp\n'}
+[32.621135] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/simple_subscriber_plugin.hpp\n'}
+[32.621342] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/point_cloud_transport.hpp\n'}
+[32.621550] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/republish.hpp\n'}
+[32.621773] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/publisher_plugin.hpp\n'}
+[32.621964] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/subscriber_filter.hpp\n'}
+[32.622162] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/subscriber_plugin.hpp\n'}
+[32.622366] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/subscriber.hpp\n'}
+[32.622565] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/include/point_cloud_transport/point_cloud_transport/simple_publisher_plugin.hpp\n'}
+[32.622986] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/ament_index/resource_index/package_run_dependencies/point_cloud_transport\n'}
+[32.623292] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/ament_index/resource_index/parent_prefix_path/point_cloud_transport\n'}
+[32.623610] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/environment/ament_prefix_path.sh\n'}
+[32.623858] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/environment/ament_prefix_path.dsv\n'}
+[32.624095] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/environment/path.sh\n'}
+[32.624345] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/environment/path.dsv\n'}
+[32.624567] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/local_setup.bash\n'}
+[32.624819] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/local_setup.sh\n'}
+[32.625045] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/local_setup.zsh\n'}
+[32.625271] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/local_setup.dsv\n'}
+[32.625487] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/package.dsv\n'}
+[32.625799] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/ament_index/resource_index/packages/point_cloud_transport\n'}
+[32.626089] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/ament_index/resource_index/point_cloud_transport__pluginlib__plugin/point_cloud_transport\n'}
+[32.626396] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/ament_index/resource_index/rclcpp_components/point_cloud_transport\n'}
+[32.626721] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/cmake/export_point_cloud_transportExport.cmake\n'}
+[32.626961] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/cmake/export_point_cloud_transportExport-noconfig.cmake\n'}
+[32.627195] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[32.627420] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[32.627664] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[32.627920] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/cmake/point_cloud_transportConfig.cmake\n'}
+[32.628167] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/cmake/point_cloud_transportConfig-version.cmake\n'}
+[32.628360] (point_cloud_transport) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/ros2bag/point_cloud_transport/install/point_cloud_transport/share/point_cloud_transport/package.xml\n'}
+[32.630910] (point_cloud_transport) CommandEnded: {'returncode': 0}
+[32.706276] (-) TimerEvent: {}
+[32.806910] (-) TimerEvent: {}
+[32.820287] (point_cloud_transport) JobEnded: {'identifier': 'point_cloud_transport', 'rc': 0}
+[32.821786] (-) EventReactorShutdown: {}

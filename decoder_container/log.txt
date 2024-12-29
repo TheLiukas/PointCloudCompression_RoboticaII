@@ -1,0 +1,83 @@
+    1  sudo apt-get update && sudo apt-get upgrade
+    2  ros2
+    3  ros2 pkg list
+    4  sudo apt-get install ros-humble-point-cloud-transport
+    5  ros2 pkg list
+    6  ros2 run point_cloud_transport list_plugins
+    7  ros2 run point_cloud_transport list_plugin
+    8  ros2 executable
+    9  ros2 pkg point_cloud_transport exectuables
+   10  ros2 pkg point_cloud_transport exectuables list
+   11  ros2 pkg point_cloud_transport list
+   12  ros2 pkg point_cloud_transport -h
+   13  ros2 pkg exectuables -h 
+   14  ros2 pkg executables -h 
+   15  ros2 pkg executables point-cloud-transport
+   16  ros2 pkg list
+   17  ros2 pkg executables point_cloud_transport
+   18  ros2 run point_cloud_transport list_transports
+   19  git
+   20  git clone https://github.com/paplhjak/draco_point_cloud_transport.git
+   21  cd draco_point_cloud_transport/
+   22  colcon build .
+   23  colcon build 
+   24  rosdep update
+   25  colcon build 
+   26  ls
+   27  rosdep install --from-paths src --ignore-src -r -y
+   28  colcon build 
+   29  rosdep install --from-paths src --ignore-src -r -y
+   30  colcon build 
+   31  ros-humble-ament-cmake-clang-format
+   32  sudo apt-get install ros-humble-ament-cmake-clang-format
+   33  colcon build 
+   34  rosdep install --from-paths src --ignore-src -r -y
+   35  colcon -h
+   36  ls
+   37  rm -rf build install log
+   38  ls
+   39  colcon build
+   40  ros2
+   41  rosdep update
+   42  rosdep install --from-paths src --ignore-src -r -y
+   43  sudo apt-get install ros-dev-tools
+   44  rosdep update
+   45  rosdep install --from-paths src --ignore-src -r -y
+   46  colcon build
+   47  rm -rf build install log
+   48  colcon build
+   49  /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+  apt-get update -y || true && rosdep update && \
+  rosdep install --from-paths src --ignore-src -r -y && \
+  colcon build --parallel-workers $(nproc) --symlink-install \
+  --event-handlers console_direct+ --base-paths src \
+  --cmake-args ' -DCMAKE_BUILD_TYPE=Release' \
+  ' -DCMAKE_LIBRARY_PATH=/usr/local/cuda/lib64/stubs' \
+  ' -DCMAKE_CXX_FLAGS="-Wl,--allow-shlib-undefined"' "
+   50  cmake
+   51  sudo apt-get install cmake
+   52  sudo apt-get install ros-${ROS2_DIST}-point-cloud-interfaces 
+   53  sudo apt-get install ros-humble-point-cloud-interfaces 
+   54  /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+  apt-get update -y || true && rosdep update && \
+  rosdep install --from-paths src --ignore-src -r -y && \
+  colcon build --parallel-workers $(nproc) --symlink-install \
+  --event-handlers console_direct+ --base-paths src \
+  --cmake-args ' -DCMAKE_BUILD_TYPE=Release' \
+  ' -DCMAKE_LIBRARY_PATH=/usr/local/cuda/lib64/stubs' \
+  ' -DCMAKE_CXX_FLAGS="-Wl,--allow-shlib-undefined"' "
+   55  ros2 run point_cloud_transport list_transports
+   56  colcon build
+   57  RUN apt-get update && apt-get install -y python3-colcon-common-extensions   build-essential   ros-humble-ament-cmake 
+   58  apt-get update && apt-get install -y python3-colcon-common-extensions   build-essential   ros-humble-ament-cmake 
+   59  apt-get update && apt-get install -y python3-colcon-common-extensions   build-essential   ros-humble-ament-cmake libdraco-dev
+   60  colcon build
+   61  cd ..
+   62  ls
+   63  apt-get update && apt-get install -y git cmake build-essential &&   git clone https://github.com/google/draco.git &&   cd draco && mkdir build && cd build &&   cmake .. && make && make install
+   64  cd ..
+   65  sudo apt-get install gedit
+   66  sudo apt-get nano
+   67  sudo apt-get install gedit -y
+   68  history
+   69  history > log.txt

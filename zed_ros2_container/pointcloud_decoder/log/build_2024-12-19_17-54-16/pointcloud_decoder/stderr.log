@@ -1,0 +1,20 @@
+[31mCMake Error at /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package):
+  By not providing "Findpluginlib::pluginlib.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "pluginlib::pluginlib", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "pluginlib::pluginlib" with any of the following names:
+
+    pluginlib::pluginlibConfig.cmake
+    pluginlib::pluginlib-config.cmake
+
+  Add the installation prefix of "pluginlib::pluginlib" to CMAKE_PREFIX_PATH
+  or set "pluginlib::pluginlib_DIR" to a directory containing one of the
+  above files.  If "pluginlib::pluginlib" provides a separate development
+  package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/cmake/benchdraco_point_cloud_transportConfig.cmake:41 (include)
+  CMakeLists.txt:15 (find_package)
+
+[0m

@@ -1,0 +1,362 @@
+[0.139s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.139s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7e1ea9c17d60>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7e1ea9d543d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7e1ea9d543d0>>, mixin_verb=('build',))
+[0.320s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.321s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.321s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.321s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.322s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.322s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/ros2_ws/ros2bag'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_interfaces) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_interfaces) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_interfaces) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_interfaces) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_interfaces) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_interfaces) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_interfaces) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_interfaces) by extension 'ros'
+[0.339s] DEBUG:colcon.colcon_core.package_identification:Package 'benchdraco_point_cloud_interfaces' with type 'ros.ament_cmake' and name 'benchdraco_point_cloud_interfaces'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_transport) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_transport) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_transport) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_transport) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_transport) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_transport) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_transport) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_transport) by extensions ['ros']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(benchdraco_point_cloud_transport) by extension 'ros'
+[0.341s] DEBUG:colcon.colcon_core.package_identification:Package 'benchdraco_point_cloud_transport' with type 'ros.ament_cmake' and name 'benchdraco_point_cloud_transport'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extension 'ros'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extensions ['cmake', 'python']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extension 'cmake'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extension 'python'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extensions ['python_setup_py']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport) by extension 'python_setup_py'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport) by extension 'ros'
+[0.345s] DEBUG:colcon.colcon_core.package_identification:Package 'point_cloud_transport/point_cloud_transport' with type 'ros.ament_cmake' and name 'point_cloud_transport'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport_py) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport_py) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport_py) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport_py) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport_py) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport_py) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport_py) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport_py) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(point_cloud_transport/point_cloud_transport_py) by extension 'ros'
+[0.346s] DEBUG:colcon.colcon_core.package_identification:Package 'point_cloud_transport/point_cloud_transport_py' with type 'ros.ament_cmake' and name 'point_cloud_transport_py'
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.372s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.373s] DEBUG:colcon.colcon_core.verb:Building package 'benchdraco_point_cloud_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces', 'merge_install': False, 'path': '/root/ros2_ws/ros2bag/benchdraco_point_cloud_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport' build argument 'cmake_args' from command line to 'None'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport' build argument 'cmake_target' from command line to 'None'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport' build argument 'cmake_clean_cache' from command line to 'False'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport' build argument 'cmake_clean_first' from command line to 'False'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport' build argument 'cmake_force_configure' from command line to 'False'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport' build argument 'ament_cmake_args' from command line to 'None'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport' build argument 'catkin_cmake_args' from command line to 'None'
+[0.373s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.374s] DEBUG:colcon.colcon_core.verb:Building package 'point_cloud_transport' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/ros2bag/build/point_cloud_transport', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/ros2bag/install/point_cloud_transport', 'merge_install': False, 'path': '/root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport', 'symlink_install': False, 'test_result_base': None}
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_transport' build argument 'cmake_args' from command line to 'None'
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_transport' build argument 'cmake_target' from command line to 'None'
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_transport' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_transport' build argument 'cmake_clean_cache' from command line to 'False'
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_transport' build argument 'cmake_clean_first' from command line to 'False'
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_transport' build argument 'cmake_force_configure' from command line to 'False'
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_transport' build argument 'ament_cmake_args' from command line to 'None'
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_transport' build argument 'catkin_cmake_args' from command line to 'None'
+[0.374s] Level 5:colcon.colcon_core.verb:set package 'benchdraco_point_cloud_transport' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.374s] DEBUG:colcon.colcon_core.verb:Building package 'benchdraco_point_cloud_transport' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport', 'merge_install': False, 'path': '/root/ros2_ws/ros2bag/benchdraco_point_cloud_transport', 'symlink_install': False, 'test_result_base': None}
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_py' build argument 'cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_py' build argument 'cmake_target' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_py' build argument 'cmake_clean_first' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_py' build argument 'cmake_force_configure' from command line to 'False'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_py' build argument 'ament_cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.375s] Level 5:colcon.colcon_core.verb:set package 'point_cloud_transport_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.375s] DEBUG:colcon.colcon_core.verb:Building package 'point_cloud_transport_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/ros2_ws/ros2bag/build/point_cloud_transport_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/ros2_ws/ros2bag/install/point_cloud_transport_py', 'merge_install': False, 'path': '/root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport_py', 'symlink_install': False, 'test_result_base': None}
+[0.375s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.376s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.377s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport' with build type 'ament_cmake'
+[0.377s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport'
+[0.380s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.380s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.380s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.386s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/ros2bag/benchdraco_point_cloud_interfaces' with build type 'ament_cmake'
+[0.386s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/ros2bag/benchdraco_point_cloud_interfaces'
+[0.387s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.387s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/point_cloud_transport': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/install/point_cloud_transport
+[0.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ros2_ws/ros2bag/benchdraco_point_cloud_interfaces -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces
+[2.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/point_cloud_transport' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/install/point_cloud_transport
+[2.515s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/point_cloud_transport': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/ros2bag/build/point_cloud_transport -- -j8 -l8
+[6.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ros2_ws/ros2bag/benchdraco_point_cloud_interfaces -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces
+[6.461s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces -- -j8 -l8
+[14.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces -- -j8 -l8
+[14.794s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces
+[14.936s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(benchdraco_point_cloud_interfaces)
+[14.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces
+[14.941s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces' for CMake module files
+[14.942s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces' for CMake config files
+[14.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('benchdraco_point_cloud_interfaces', 'cmake_prefix_path')
+[14.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/cmake_prefix_path.ps1'
+[14.944s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/cmake_prefix_path.dsv'
+[14.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/cmake_prefix_path.sh'
+[14.946s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib'
+[14.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('benchdraco_point_cloud_interfaces', 'ld_library_path_lib')
+[14.947s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/ld_library_path_lib.ps1'
+[14.948s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/ld_library_path_lib.dsv'
+[14.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/ld_library_path_lib.sh'
+[14.949s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/bin'
+[14.949s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/pkgconfig/benchdraco_point_cloud_interfaces.pc'
+[14.952s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/python3.10/site-packages'
+[14.952s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/bin'
+[14.953s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.ps1'
+[14.954s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.dsv'
+[14.956s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.sh'
+[14.957s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.bash'
+[14.959s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.zsh'
+[14.960s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/colcon-core/packages/benchdraco_point_cloud_interfaces)
+[15.080s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(benchdraco_point_cloud_interfaces)
+[15.081s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces' for CMake module files
+[15.082s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces' for CMake config files
+[15.083s] Level 1:colcon.colcon_core.shell:create_environment_hook('benchdraco_point_cloud_interfaces', 'cmake_prefix_path')
+[15.084s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/cmake_prefix_path.ps1'
+[15.085s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/cmake_prefix_path.dsv'
+[15.086s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/cmake_prefix_path.sh'
+[15.088s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib'
+[15.088s] Level 1:colcon.colcon_core.shell:create_environment_hook('benchdraco_point_cloud_interfaces', 'ld_library_path_lib')
+[15.088s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/ld_library_path_lib.ps1'
+[15.089s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/ld_library_path_lib.dsv'
+[15.090s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/hook/ld_library_path_lib.sh'
+[15.091s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/bin'
+[15.091s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/pkgconfig/benchdraco_point_cloud_interfaces.pc'
+[15.092s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/python3.10/site-packages'
+[15.092s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/bin'
+[15.093s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.ps1'
+[15.094s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.dsv'
+[15.096s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.sh'
+[15.097s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.bash'
+[15.099s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.zsh'
+[15.100s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/colcon-core/packages/benchdraco_point_cloud_interfaces)
+[45.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/point_cloud_transport' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/ros2bag/build/point_cloud_transport -- -j8 -l8
+[45.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/point_cloud_transport': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/ros2bag/build/point_cloud_transport
+[45.654s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_cloud_transport)
+[45.654s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport' for CMake module files
+[45.655s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/point_cloud_transport' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/ros2bag/build/point_cloud_transport
+[45.655s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport' for CMake config files
+[45.656s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport', 'cmake_prefix_path')
+[45.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/cmake_prefix_path.ps1'
+[45.657s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/cmake_prefix_path.dsv'
+[45.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/cmake_prefix_path.sh'
+[45.658s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport/lib'
+[45.658s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport', 'ld_library_path_lib')
+[45.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/ld_library_path_lib.ps1'
+[45.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/ld_library_path_lib.dsv'
+[45.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/ld_library_path_lib.sh'
+[45.659s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport/bin'
+[45.659s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport/lib/pkgconfig/point_cloud_transport.pc'
+[45.659s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport/lib/python3.10/site-packages'
+[45.659s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport/bin'
+[45.660s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/package.ps1'
+[45.660s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/package.dsv'
+[45.661s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/package.sh'
+[45.661s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/package.bash'
+[45.662s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/package.zsh'
+[45.662s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/ros2bag/install/point_cloud_transport/share/colcon-core/packages/point_cloud_transport)
+[45.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_cloud_transport)
+[45.824s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport' for CMake module files
+[45.826s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport' for CMake config files
+[45.827s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport', 'cmake_prefix_path')
+[45.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/cmake_prefix_path.ps1'
+[45.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/cmake_prefix_path.dsv'
+[45.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/cmake_prefix_path.sh'
+[45.832s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport/lib'
+[45.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport', 'ld_library_path_lib')
+[45.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/ld_library_path_lib.ps1'
+[45.833s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/ld_library_path_lib.dsv'
+[45.834s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/hook/ld_library_path_lib.sh'
+[45.835s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport/bin'
+[45.836s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport/lib/pkgconfig/point_cloud_transport.pc'
+[45.836s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport/lib/python3.10/site-packages'
+[45.837s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport/bin'
+[45.838s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/package.ps1'
+[45.839s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/package.dsv'
+[45.841s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/package.sh'
+[45.842s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/package.bash'
+[45.845s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport/share/point_cloud_transport/package.zsh'
+[45.847s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/ros2bag/install/point_cloud_transport/share/colcon-core/packages/point_cloud_transport)
+[45.847s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/ros2bag/benchdraco_point_cloud_transport' with build type 'ament_cmake'
+[45.848s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/ros2bag/benchdraco_point_cloud_transport'
+[45.849s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[45.849s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[45.860s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport_py' with build type 'ament_cmake'
+[45.861s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport_py'
+[45.861s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[45.862s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[45.875s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2_ws/ros2bag/benchdraco_point_cloud_transport -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport
+[45.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/point_cloud_transport_py': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport_py -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/install/point_cloud_transport_py
+[47.716s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /root/ros2_ws/ros2bag/benchdraco_point_cloud_transport -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport
+[47.719s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport -- -j8 -l8
+[48.269s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/point_cloud_transport_py' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /root/ros2_ws/ros2bag/point_cloud_transport/point_cloud_transport_py -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/install/point_cloud_transport_py
+[48.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/point_cloud_transport_py': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /root/ros2_ws/ros2bag/build/point_cloud_transport_py -- -j8 -l8
+[61.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/point_cloud_transport_py' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /root/ros2_ws/ros2bag/build/point_cloud_transport_py -- -j8 -l8
+[61.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/point_cloud_transport_py': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /root/ros2_ws/ros2bag/build/point_cloud_transport_py
+[61.864s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_cloud_transport_py)
+[61.864s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py' for CMake module files
+[61.866s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/point_cloud_transport_py' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /root/ros2_ws/ros2bag/build/point_cloud_transport_py
+[61.867s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py' for CMake config files
+[61.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport_py', 'cmake_prefix_path')
+[61.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/hook/cmake_prefix_path.ps1'
+[61.869s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/hook/cmake_prefix_path.dsv'
+[61.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/hook/cmake_prefix_path.sh'
+[61.872s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/bin'
+[61.872s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/lib/pkgconfig/point_cloud_transport_py.pc'
+[61.873s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/lib/python3.10/site-packages'
+[61.873s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/bin'
+[61.874s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/package.ps1'
+[61.875s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/package.dsv'
+[61.876s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/package.sh'
+[61.877s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/package.bash'
+[61.878s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/package.zsh'
+[61.879s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/colcon-core/packages/point_cloud_transport_py)
+[61.933s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(point_cloud_transport_py)
+[61.934s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py' for CMake module files
+[61.935s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py' for CMake config files
+[61.936s] Level 1:colcon.colcon_core.shell:create_environment_hook('point_cloud_transport_py', 'cmake_prefix_path')
+[61.937s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/hook/cmake_prefix_path.ps1'
+[61.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/hook/cmake_prefix_path.dsv'
+[61.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/hook/cmake_prefix_path.sh'
+[61.942s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/bin'
+[61.942s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/lib/pkgconfig/point_cloud_transport_py.pc'
+[61.943s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/lib/python3.10/site-packages'
+[61.943s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/bin'
+[61.944s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/package.ps1'
+[61.946s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/package.dsv'
+[61.947s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/package.sh'
+[61.949s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/package.bash'
+[61.950s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/point_cloud_transport_py/package.zsh'
+[61.951s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/ros2bag/install/point_cloud_transport_py/share/colcon-core/packages/point_cloud_transport_py)
+[64.169s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport -- -j8 -l8
+[64.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport
+[64.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(benchdraco_point_cloud_transport)
+[64.246s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport' for CMake module files
+[64.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport' returned '0': AMENT_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/root/ros2_ws/ros2bag/install/point_cloud_transport/lib:/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_transport
+[64.248s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport' for CMake config files
+[64.249s] Level 1:colcon.colcon_core.shell:create_environment_hook('benchdraco_point_cloud_transport', 'cmake_prefix_path')
+[64.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/cmake_prefix_path.ps1'
+[64.251s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/cmake_prefix_path.dsv'
+[64.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/cmake_prefix_path.sh'
+[64.252s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/lib'
+[64.252s] Level 1:colcon.colcon_core.shell:create_environment_hook('benchdraco_point_cloud_transport', 'ld_library_path_lib')
+[64.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/ld_library_path_lib.ps1'
+[64.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/ld_library_path_lib.dsv'
+[64.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/ld_library_path_lib.sh'
+[64.254s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/bin'
+[64.254s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/lib/pkgconfig/benchdraco_point_cloud_transport.pc'
+[64.254s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/lib/python3.10/site-packages'
+[64.254s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/bin'
+[64.255s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.ps1'
+[64.255s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.dsv'
+[64.256s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.sh'
+[64.256s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.bash'
+[64.256s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.zsh'
+[64.257s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/colcon-core/packages/benchdraco_point_cloud_transport)
+[64.291s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(benchdraco_point_cloud_transport)
+[64.291s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport' for CMake module files
+[64.292s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport' for CMake config files
+[64.293s] Level 1:colcon.colcon_core.shell:create_environment_hook('benchdraco_point_cloud_transport', 'cmake_prefix_path')
+[64.293s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/cmake_prefix_path.ps1'
+[64.294s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/cmake_prefix_path.dsv'
+[64.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/cmake_prefix_path.sh'
+[64.295s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/lib'
+[64.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('benchdraco_point_cloud_transport', 'ld_library_path_lib')
+[64.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/ld_library_path_lib.ps1'
+[64.296s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/ld_library_path_lib.dsv'
+[64.297s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/hook/ld_library_path_lib.sh'
+[64.297s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/bin'
+[64.297s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/lib/pkgconfig/benchdraco_point_cloud_transport.pc'
+[64.298s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/lib/python3.10/site-packages'
+[64.298s] Level 1:colcon.colcon_core.environment:checking '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/bin'
+[64.298s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.ps1'
+[64.299s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.dsv'
+[64.315s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.sh'
+[64.316s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.bash'
+[64.316s] INFO:colcon.colcon_core.shell:Creating package script '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.zsh'
+[64.317s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_transport/share/colcon-core/packages/benchdraco_point_cloud_transport)
+[64.318s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[64.318s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[64.318s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[64.318s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[64.325s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[64.325s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[64.326s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[64.326s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[64.331s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[64.331s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[64.332s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/ros2bag/install/local_setup.ps1'
+[64.335s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros2_ws/ros2bag/install/_local_setup_util_ps1.py'
+[64.337s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/ros2bag/install/setup.ps1'
+[64.338s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/ros2bag/install/local_setup.sh'
+[64.339s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/ros2_ws/ros2bag/install/_local_setup_util_sh.py'
+[64.339s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/ros2bag/install/setup.sh'
+[64.341s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/ros2bag/install/local_setup.bash'
+[64.341s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/ros2bag/install/setup.bash'
+[64.342s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/ros2_ws/ros2bag/install/local_setup.zsh'
+[64.343s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/ros2_ws/ros2bag/install/setup.zsh'

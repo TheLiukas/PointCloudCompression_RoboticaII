@@ -1,0 +1,55 @@
+FROM ros:humble
+ 
+# use bash
+SHELL ["/bin/bash", "-c"]
+ 
+# install utilities 
+RUN apt update && apt upgrade -y && \
+   apt install -y nano wget curl  
+
+#install Cmake 3.24+
+RUN sudo apt-get update && \
+   sudo apt-get install ca-certificates gpg wget && \
+   test -f /usr/share/doc/kitware-archive-keyring/copyright || wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null && \
+   echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ jammy main' | sudo tee /etc/apt/sources.list.d/kitware.list >/dev/null && \
+   sudo apt-get update && \
+   sudo apt-get install -y kitware-archive-keyring && \
+   sudo apt-get install -y cmake
+
+#Install ASM_NASM compiler and clang c++ libraries
+RUN sudo apt-get install -y nasm && \
+    sudo apt install -y clang libc++-dev libc++abi-dev 
+   
+WORKDIR /root/ros2_ws/
+
+#install ros2 humble
+
+RUN apt update && apt install -y ros-humble-desktop-full
+
+#install dependency yaml-cpp
+WORKDIR /root/yaml-cpp
+RUN git clone https://github.com/jbeder/yaml-cpp.git
+RUN /bin/bash -c "cd yaml-cpp && mkdir build && cd build && cmake .. && make && make install"
+
+#copy and build customized point_cloud_transport and benchdraco_point_cloud_transport
+WORKDIR /root/ros2_ws/
+COPY tmp/ srcbench/
+WORKDIR  /root/ros2_ws/srcbench/
+RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+  apt-get update -y || true && rosdep update &&  rosdep install --from-paths . --ignore-src -r -y && colcon build &&   echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
+  source ~/.bashrc"
+
+#WORKDIR  /root/ros2_ws/srcbench/point_cloud_transport/point_cloud_transport/
+#RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+#  apt-get update -y || true && rosdep update &&  rosdep install --from-paths . --ignore-src -r -y && colcon build --packages-select point_cloud_transport &&   echo source $(pwd)/install/#local_setup.bash >> ~/.bashrc && \
+#  source ~/.bashrc"
+#WORKDIR  /root/ros2_ws/srcbench/benchdraco_point_cloud_interfaces
+#RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+#  apt-get update -y || true && rosdep update && rosdep install --from-paths . --ignore-src -r -y && colcon build --packages-select benchdraco_point_cloud_interfaces &&   echo source $(pwd)/#install/local_setup.bash >> ~/.bashrc && \
+#  source ~/.bashrc"
+#WORKDIR  /root/ros2_ws/srcbench/benchdraco_point_cloud_transport  
+#  RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+#  apt-get update -y || true && rosdep update && rosdep install --from-paths . --ignore-src -r -y && colcon build --packages-select benchdraco_point_cloud_transport &&   echo source $(pwd)/install/#local_setup.bash >> ~/.bashrc && \
+#  source ~/.bashrc"
+WORKDIR /root/ros2_ws
+ 

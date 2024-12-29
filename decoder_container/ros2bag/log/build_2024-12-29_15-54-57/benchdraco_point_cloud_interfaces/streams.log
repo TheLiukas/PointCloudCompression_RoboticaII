@@ -1,0 +1,271 @@
+[0.013s] Invoking command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ros2_ws/ros2bag/benchdraco_point_cloud_interfaces -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces
+[0.077s] -- The C compiler identification is GNU 11.4.0
+[0.157s] -- The CXX compiler identification is GNU 11.4.0
+[0.174s] -- Detecting C compiler ABI info
+[0.263s] -- Detecting C compiler ABI info - done
+[0.284s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.284s] -- Detecting C compile features
+[0.284s] -- Detecting C compile features - done
+[0.289s] -- Detecting CXX compiler ABI info
+[0.386s] -- Detecting CXX compiler ABI info - done
+[0.420s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.421s] -- Detecting CXX compile features
+[0.423s] -- Detecting CXX compile features - done
+[0.432s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.617s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.787s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.839s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.847s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.860s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.878s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.902s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.944s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.995s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.619s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.347s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.579s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.587s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[4.587s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.587s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.587s]   the cmake_policy command to set the policy and suppress this warning.
+[4.588s] 
+[4.588s] Call Stack (most recent call first):
+[4.588s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.588s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.588s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[4.588s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.588s] [0m
+[4.635s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[4.641s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.642s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[4.642s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.643s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.643s]   the cmake_policy command to set the policy and suppress this warning.
+[4.643s] 
+[4.644s] Call Stack (most recent call first):
+[4.644s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.645s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.645s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.646s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[4.647s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.647s] [0m
+[4.709s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[4.710s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.710s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.710s]   the cmake_policy command to set the policy and suppress this warning.
+[4.710s] 
+[4.714s] Call Stack (most recent call first):
+[4.714s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.714s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.714s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.714s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[4.714s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.715s] [0m
+[4.725s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[4.726s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.727s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.728s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.783s] -- Found PythonExtra: .so
+[5.035s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.264s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.268s] -- Configured cppcheck include dirs: 
+[5.268s] -- Configured cppcheck exclude dirs and/or files: 
+[5.308s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.374s] -- Added test 'lint_cmake' to check CMake code style
+[5.414s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.690s] -- Added test 'uncrustify' to check C / C++ code style
+[5.690s] -- Configured uncrustify additional arguments: 
+[5.734s] -- Added test 'xmllint' to check XML markup files
+[5.753s] -- Configuring done (5.7s)
+[6.012s] -- Generating done (0.3s)
+[6.017s] -- Build files have been written to: /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces
+[6.064s] Invoked command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ros2_ws/ros2bag/benchdraco_point_cloud_interfaces -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces
+[6.074s] Invoking command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces -- -j8 -l8
+[6.163s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[6.187s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.200s] [  6%] Built target ament_cmake_python_copy_benchdraco_point_cloud_interfaces
+[6.726s] running egg_info
+[6.726s] creating benchdraco_point_cloud_interfaces.egg-info
+[6.726s] writing benchdraco_point_cloud_interfaces.egg-info/PKG-INFO
+[6.726s] writing dependency_links to benchdraco_point_cloud_interfaces.egg-info/dependency_links.txt
+[6.726s] writing top-level names to benchdraco_point_cloud_interfaces.egg-info/top_level.txt
+[6.726s] writing manifest file 'benchdraco_point_cloud_interfaces.egg-info/SOURCES.txt'
+[6.730s] reading manifest file 'benchdraco_point_cloud_interfaces.egg-info/SOURCES.txt'
+[6.730s] writing manifest file 'benchdraco_point_cloud_interfaces.egg-info/SOURCES.txt'
+[6.788s] [  6%] Built target ament_cmake_python_build_benchdraco_point_cloud_interfaces_egg
+[6.973s] [  9%] [32mBuilding C object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_generator_c.dir/rosidl_generator_c/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__functions.c.o[0m
+[7.156s] [ 12%] [32m[1mLinking C shared library libbenchdraco_point_cloud_interfaces__rosidl_generator_c.so[0m
+[7.245s] [ 12%] Built target benchdraco_point_cloud_interfaces__cpp
+[7.273s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[7.281s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.284s] [ 22%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.305s] [ 22%] Built target benchdraco_point_cloud_interfaces__rosidl_generator_c
+[7.350s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.360s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[7.401s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[8.596s] [ 35%] [32mBuilding CXX object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__type_support.cpp.o[0m
+[8.604s] [ 38%] [32mBuilding CXX object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/benchdraco_point_cloud_interfaces/msg/bench_compressed_point_cloud2__type_support.cpp.o[0m
+[8.682s] [ 41%] [32mBuilding CXX object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__type_support_c.cpp.o[0m
+[8.741s] [ 45%] [32mBuilding CXX object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/benchdraco_point_cloud_interfaces/msg/detail/dds_fastrtps/bench_compressed_point_cloud2__type_support.cpp.o[0m
+[8.870s] [ 48%] [32mBuilding CXX object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/benchdraco_point_cloud_interfaces/msg/bench_compressed_point_cloud2__type_support.cpp.o[0m
+[8.881s] [ 51%] [32mBuilding C object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__type_support.c.o[0m
+[8.982s] [ 54%] [32m[1mLinking CXX shared library libbenchdraco_point_cloud_interfaces__rosidl_typesupport_c.so[0m
+[9.036s] [ 58%] [32m[1mLinking C shared library libbenchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_c.so[0m
+[9.102s] [ 58%] Built target benchdraco_point_cloud_interfaces__rosidl_typesupport_c
+[9.122s] [ 58%] Built target benchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_c
+[9.962s] [ 61%] [32m[1mLinking CXX shared library libbenchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[10.053s] [ 64%] [32m[1mLinking CXX shared library libbenchdraco_point_cloud_interfaces__rosidl_typesupport_cpp.so[0m
+[10.192s] [ 64%] Built target benchdraco_point_cloud_interfaces__rosidl_typesupport_cpp
+[10.226s] [ 67%] [32m[1mLinking CXX shared library libbenchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[10.335s] [ 67%] Built target benchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_c
+[10.516s] [ 67%] Built target benchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_cpp
+[11.621s] [ 70%] [32m[1mLinking CXX shared library libbenchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[11.978s] [ 70%] Built target benchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_cpp
+[12.019s] [ 70%] Built target benchdraco_point_cloud_interfaces
+[12.076s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[13.430s] [ 74%] Built target benchdraco_point_cloud_interfaces__py
+[13.456s] [ 77%] [32mBuilding C object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_generator_py.dir/rosidl_generator_py/benchdraco_point_cloud_interfaces/msg/_bench_compressed_point_cloud2_s.c.o[0m
+[13.732s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/benchdraco_point_cloud_interfaces/libbenchdraco_point_cloud_interfaces__rosidl_generator_py.so[0m
+[13.828s] [ 80%] Built target benchdraco_point_cloud_interfaces__rosidl_generator_py
+[13.861s] [ 83%] [32mBuilding C object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/benchdraco_point_cloud_interfaces/_benchdraco_point_cloud_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[13.870s] [ 87%] [32mBuilding C object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/benchdraco_point_cloud_interfaces/_benchdraco_point_cloud_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[13.882s] [ 90%] [32mBuilding C object CMakeFiles/benchdraco_point_cloud_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/benchdraco_point_cloud_interfaces/_benchdraco_point_cloud_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[14.106s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.156s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.199s] [100%] [32m[1mLinking C shared library rosidl_generator_py/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[14.218s] [100%] Built target benchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[14.252s] [100%] Built target benchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_c__pyext
+[14.283s] [100%] Built target benchdraco_point_cloud_interfaces__rosidl_typesupport_c__pyext
+[14.297s] Invoked command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces -- -j8 -l8
+[14.408s] Invoking command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces
+[14.414s] -- Install configuration: ""
+[14.414s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/ament_index/resource_index/rosidl_interfaces/benchdraco_point_cloud_interfaces
+[14.415s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces
+[14.415s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg
+[14.415s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail
+[14.415s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__type_support.h
+[14.416s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__struct.h
+[14.416s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__functions.h
+[14.418s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__functions.c
+[14.419s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/rosidl_generator_c__visibility_control.h
+[14.419s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/bench_compressed_point_cloud2.h
+[14.419s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/environment/library_path.sh
+[14.419s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/environment/library_path.dsv
+[14.419s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_generator_c.so
+[14.420s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_generator_c.so" to ""
+[14.421s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces
+[14.421s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg
+[14.421s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail
+[14.421s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__rosidl_typesupport_fastrtps_c.h
+[14.421s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[14.422s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_c.so
+[14.423s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[14.423s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces
+[14.423s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg
+[14.424s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail
+[14.424s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__traits.hpp
+[14.424s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__struct.hpp
+[14.424s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__builder.hpp
+[14.425s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/bench_compressed_point_cloud2.hpp
+[14.425s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces
+[14.425s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg
+[14.426s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail
+[14.426s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/dds_fastrtps
+[14.426s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__rosidl_typesupport_fastrtps_cpp.hpp
+[14.427s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[14.427s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[14.428s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[14.428s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces
+[14.428s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg
+[14.429s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail
+[14.429s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__type_support.c
+[14.429s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__rosidl_typesupport_introspection_c.h
+[14.430s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[14.430s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_c.so
+[14.431s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[14.431s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_c.so
+[14.432s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_c.so" to ""
+[14.432s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces
+[14.432s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg
+[14.432s] -- Up-to-date: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail
+[14.433s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__type_support.cpp
+[14.433s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/include/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces/msg/detail/bench_compressed_point_cloud2__rosidl_typesupport_introspection_cpp.hpp
+[14.433s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_cpp.so
+[14.434s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[14.435s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_cpp.so
+[14.435s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_typesupport_cpp.so" to ""
+[14.435s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/environment/pythonpath.sh
+[14.436s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/environment/pythonpath.dsv
+[14.436s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces-0.0.0-py3.10.egg-info
+[14.437s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[14.437s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[14.438s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[14.438s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[14.438s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces
+[14.439s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/_benchdraco_point_cloud_interfaces_s.ep.rosidl_typesupport_c.c
+[14.440s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/_benchdraco_point_cloud_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[14.440s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[14.440s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/_benchdraco_point_cloud_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[14.441s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/__init__.py
+[14.441s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[14.442s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/libbenchdraco_point_cloud_interfaces__rosidl_generator_py.so
+[14.442s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/msg
+[14.443s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/msg/_bench_compressed_point_cloud2.py
+[14.443s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/msg/__init__.py
+[14.444s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/msg/_bench_compressed_point_cloud2_s.c
+[14.444s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[14.511s] Listing '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces'...
+[14.512s] Compiling '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/__init__.py'...
+[14.512s] Listing '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/msg'...
+[14.512s] Compiling '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/msg/__init__.py'...
+[14.512s] Compiling '/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/msg/_bench_compressed_point_cloud2.py'...
+[14.522s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[14.523s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[14.523s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[14.524s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[14.525s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[14.526s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/local/lib/python3.10/dist-packages/benchdraco_point_cloud_interfaces/benchdraco_point_cloud_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[14.528s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_generator_py.so
+[14.528s] -- Set non-toolchain portion of runtime path of "/root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/lib/libbenchdraco_point_cloud_interfaces__rosidl_generator_py.so" to ""
+[14.528s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/msg/BenchCompressedPointCloud2.idl
+[14.528s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/msg/BenchCompressedPointCloud2.msg
+[14.529s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/ament_index/resource_index/package_run_dependencies/benchdraco_point_cloud_interfaces
+[14.530s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/ament_index/resource_index/parent_prefix_path/benchdraco_point_cloud_interfaces
+[14.530s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/environment/ament_prefix_path.sh
+[14.530s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/environment/ament_prefix_path.dsv
+[14.531s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/environment/path.sh
+[14.531s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/environment/path.dsv
+[14.532s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/local_setup.bash
+[14.532s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/local_setup.sh
+[14.533s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/local_setup.zsh
+[14.533s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/local_setup.dsv
+[14.534s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.dsv
+[14.534s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/ament_index/resource_index/packages/benchdraco_point_cloud_interfaces
+[14.535s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/export_benchdraco_point_cloud_interfaces__rosidl_generator_cExport.cmake
+[14.535s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/export_benchdraco_point_cloud_interfaces__rosidl_generator_cExport-noconfig.cmake
+[14.536s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/export_benchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[14.536s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/export_benchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[14.537s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/export_benchdraco_point_cloud_interfaces__rosidl_generator_cppExport.cmake
+[14.537s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/export_benchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[14.537s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/export_benchdraco_point_cloud_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[14.538s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/benchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[14.538s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/benchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[14.539s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/benchdraco_point_cloud_interfaces__rosidl_typesupport_cExport.cmake
+[14.539s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/benchdraco_point_cloud_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[14.540s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/benchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[14.540s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/benchdraco_point_cloud_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[14.541s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/benchdraco_point_cloud_interfaces__rosidl_typesupport_cppExport.cmake
+[14.541s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/benchdraco_point_cloud_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[14.542s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/export_benchdraco_point_cloud_interfaces__rosidl_generator_pyExport.cmake
+[14.542s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/export_benchdraco_point_cloud_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[14.543s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/rosidl_cmake-extras.cmake
+[14.543s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.544s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.544s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[14.544s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[14.545s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[14.545s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[14.546s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/benchdraco_point_cloud_interfacesConfig.cmake
+[14.546s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake/benchdraco_point_cloud_interfacesConfig-version.cmake
+[14.546s] -- Installing: /root/ros2_ws/ros2bag/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/package.xml
+[14.549s] Invoked command in '/root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/ros2bag/build/benchdraco_point_cloud_interfaces

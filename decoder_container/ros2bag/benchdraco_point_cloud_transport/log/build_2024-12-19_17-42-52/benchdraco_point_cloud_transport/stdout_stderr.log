@@ -1,0 +1,84 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+-- Found point_cloud_interfaces: 1.0.11 (/opt/ros/humble/share/point_cloud_interfaces/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found benchdraco_point_cloud_interfaces: 0.0.0 (/root/ros2_ws/zed_catture/benchdraco_point_cloud_interfaces/install/benchdraco_point_cloud_interfaces/share/benchdraco_point_cloud_interfaces/cmake)
+-- Found point_cloud_transport: 1.0.18 (/opt/ros/humble/share/point_cloud_transport/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/include;$<BUILD_INTERFACE:/root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/build/benchdraco_point_cloud_transport
+[ 40%] [32mBuilding CXX object CMakeFiles/benchdraco_point_cloud_transport.dir/src/manifest.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/benchdraco_point_cloud_transport.dir/src/draco_publisher.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/benchdraco_point_cloud_transport.dir/src/draco_subscriber.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/benchdraco_point_cloud_transport.dir/src/cloud.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libbenchdraco_point_cloud_transport.so[0m
+[100%] Built target benchdraco_point_cloud_transport
+-- Install configuration: ""
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/lib/libbenchdraco_point_cloud_transport.so
+-- Set runtime path of "/root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/lib/libbenchdraco_point_cloud_transport.so" to ""
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/include/benchdraco_point_cloud_transport
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/include/benchdraco_point_cloud_transport/cloud.hpp
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/include/benchdraco_point_cloud_transport/draco_subscriber.hpp
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/include/benchdraco_point_cloud_transport/draco_publisher.hpp
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/include/benchdraco_point_cloud_transport/cloud
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/include/benchdraco_point_cloud_transport/cloud/impl
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/include/benchdraco_point_cloud_transport/cloud/impl/cloud.hpp
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/include/benchdraco_point_cloud_transport/conversion_utilities.h
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/benchdraco_plugins.xml
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/environment/library_path.sh
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/environment/library_path.dsv
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/ament_index/resource_index/package_run_dependencies/benchdraco_point_cloud_transport
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/ament_index/resource_index/parent_prefix_path/benchdraco_point_cloud_transport
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/environment/ament_prefix_path.sh
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/environment/ament_prefix_path.dsv
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/environment/path.sh
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/environment/path.dsv
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/local_setup.bash
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/local_setup.sh
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/local_setup.zsh
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/local_setup.dsv
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.dsv
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/ament_index/resource_index/packages/benchdraco_point_cloud_transport
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/ament_index/resource_index/point_cloud_transport__pluginlib__plugin/benchdraco_point_cloud_transport
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/cmake/benchdraco_point_cloud_transportConfig.cmake
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/cmake/benchdraco_point_cloud_transportConfig-version.cmake
+-- Installing: /root/ros2_ws/zed_catture/benchdraco_point_cloud_transport/install/benchdraco_point_cloud_transport/share/benchdraco_point_cloud_transport/package.xml

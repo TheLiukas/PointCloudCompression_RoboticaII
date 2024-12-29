@@ -1,0 +1,6 @@
+{
+  "package_name": "benchdraco_point_cloud_interfaces",
+  "non_idl_tuples": [
+    "/root/ros2_ws/zed_catture/benchdraco_point_cloud_interfaces:msg/BenchCompressedPointCloud2.msg"
+  ]
+}

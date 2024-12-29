@@ -148,10 +148,26 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
 #Copy calibration file
 COPY zed_calibration/SN39574292.conf /usr/local/zed/settings/SN39574292.conf
 
+#install dependency yaml-cpp
+WORKDIR /root/yaml-cpp
+RUN git clone https://github.com/jbeder/yaml-cpp.git
+RUN /bin/bash -c "cd yaml-cpp && mkdir build && cd build && cmake .. && make && make install"
+
+WORKDIR /root/ros2_ws/
+COPY bench_temp/ srcbench/
+WORKDIR  /root/ros2_ws/srcbench/
+RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+  apt-get update -y || true && rosdep update &&  rosdep install --from-paths . --ignore-src -r -y && colcon build &&   echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
+  source ~/.bashrc"
+
+WORKDIR /root/ros2_ws/
+COPY bench_temp/config.yaml config.yaml
+
 # Setup environment variables
 COPY ros_entrypoint.sh /sbin/ros_entrypoint.sh
 RUN ls -lah /sbin/
 RUN sudo chmod 755 /sbin/ros_entrypoint.sh
+
 
 # Set entry directory
 WORKDIR /root/ros2_ws

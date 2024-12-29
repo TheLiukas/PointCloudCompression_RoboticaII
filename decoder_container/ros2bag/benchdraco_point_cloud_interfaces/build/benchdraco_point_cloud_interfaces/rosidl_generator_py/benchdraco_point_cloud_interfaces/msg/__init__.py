@@ -1,0 +1,1 @@
+from benchdraco_point_cloud_interfaces.msg._bench_compressed_point_cloud2 import BenchCompressedPointCloud2  # noqa: F401

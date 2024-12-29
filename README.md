@@ -1,3 +1,3 @@
--zed_ros2_container Docker container con ROS2 - ZED_WRAPPER 
--decoder_container Docker container con ROS2 - POINT_CLOUD_TRANSPORT e REPUBLISHER per decoding
--ros2_rviz_container Docker container con ROS2 - RVIZ per visualizzazione nuvola punti
+-  `zed_ros2_container` Docker container con ROS2 - ZED_WRAPPER \
+-  `decoder_container` Docker container con ROS2 - POINT_CLOUD_TRANSPORT e REPUBLISHER per decoding\
+-  `ros2_rviz_container` Docker container con ROS2 - RVIZ per visualizzazione nuvola punti\

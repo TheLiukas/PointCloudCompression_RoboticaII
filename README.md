@@ -1,1 +1,3 @@
-Lo script run.sh crea un container con l'immagine creata con lo script build.sh e monta la cartella zed_catture che contiene gli svo2 che deve essere creata nella stessa cartella del run.sh
+-zed_ros2_container Docker container con ROS2 - ZED_WRAPPER 
+-decoder_container Docker container con ROS2 - POINT_CLOUD_TRANSPORT e REPUBLISHER per decoding
+-ros2_rviz_container Docker container con ROS2 - RVIZ per visualizzazione nuvola punti

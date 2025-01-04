@@ -8,3 +8,4 @@ docker_ws/*
 new_docker/*
 old_*
 zed_catture/*
+pointcloud_decoder*

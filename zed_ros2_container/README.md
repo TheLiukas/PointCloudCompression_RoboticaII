@@ -1,4 +1,4 @@
-`:warning:`Deve esistere la cartella zed_catture in questa cartella con sottocartelle loseless e lossy che contengono gli svo2.`:warning:`
+:warning:Deve esistere la cartella zed_catture in questa cartella con sottocartelle loseless e lossy che contengono gli svo2.:warning:
 
 ## Zed Wrapper
 
@@ -38,12 +38,11 @@ Per informazioni sui parametri [https://github.com/ros-perception/point_cloud_tr
 Questi e gli altri parametri esclusi possono essere cambiati a runtime con ros params:
 
 > To set a quantization for a PointField entry "x" of point cloud which will be advertised on base topic *base\_topic*, one must set the parameter: /base\_topic/draco/attribute\_mapping/quantization\_bits/x.
-> 
+>
 > Example:
-> 
+>
 > ```shell
 > ros2 param set <node name> /<base_topic>/draco/attribute_mapping/quantization_bits/x 16
 > ```
 
-`:warning:` Il file "config.yaml" deve essere in /root/ros2_ws/ `:warning:`
-
+:warning: Il file "config.yaml" deve essere in /root/ros2_ws/ :warning:

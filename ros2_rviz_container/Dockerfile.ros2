@@ -52,15 +52,16 @@ RUN cd Cloud_Map_Evaluation/cloud_map_evaluation && ls -lah && mkdir build && \
   cmake .
 RUN ls -lah  Cloud_Map_Evaluation/cloud_map_evaluation   
 RUN cd Cloud_Map_Evaluation/cloud_map_evaluation && make 
-  
+ 
+# DUPLICATE
 #sourcing
-RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
-  apt-get update -y || true && rosdep update && \
-  rosdep install --from-paths src --ignore-src -r -y && \
-  colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release && \
-  echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
-  source ~/.bashrc" 
-RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash"
+#RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+#  apt-get update -y || true && rosdep update && \
+#  rosdep install --from-paths src --ignore-src -r -y && \
+#  colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release && \
+#  echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
+#  source ~/.bashrc" 
+#RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash"
 
 ## Install rosbag2pcd 
 WORKDIR /root/ros2_ws/src
@@ -72,5 +73,5 @@ RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
   colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=1 && \
   echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
   source ~/.bashrc" 
-COPY ros2bag_to_pcd.sh /root/ros2_ws/src/rosbag2_to_pcd/ros2bag_to_pcd.sh
-
+COPY ros2bag_to_pcd.sh /root/ros2_ws/ros2bag_to_pcd.sh
+COPY cloud_map_evaluation.sh /root/ros2_ws/

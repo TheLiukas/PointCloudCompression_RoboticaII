@@ -1,2 +1,10 @@
 *.svo2
 *.db3
+*:Zone.Identifier
+*/ros2bag*
+Test3012
+benchdraco*
+docker_ws/*
+new_docker/*
+old_*
+zed_catture/*

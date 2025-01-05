@@ -1,6 +1,0 @@
-Invoking command in '/root/home/tentativo_colcon/build/tentativo_colcon': /usr/bin/cmake /root/home/tentativo_colcon -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/root/home/tentativo_colcon/install/tentativo_colcon
-Invoked command in '/root/home/tentativo_colcon/build/tentativo_colcon' returned '0': /usr/bin/cmake /root/home/tentativo_colcon -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/root/home/tentativo_colcon/install/tentativo_colcon
-Invoking command in '/root/home/tentativo_colcon/build/tentativo_colcon': /usr/bin/cmake --build /root/home/tentativo_colcon/build/tentativo_colcon -- -j8 -l8
-Invoked command in '/root/home/tentativo_colcon/build/tentativo_colcon' returned '0': /usr/bin/cmake --build /root/home/tentativo_colcon/build/tentativo_colcon -- -j8 -l8
-Invoking command in '/root/home/tentativo_colcon/build/tentativo_colcon': /usr/bin/cmake --install /root/home/tentativo_colcon/build/tentativo_colcon
-Invoked command in '/root/home/tentativo_colcon/build/tentativo_colcon' returned '0': /usr/bin/cmake --install /root/home/tentativo_colcon/build/tentativo_colcon

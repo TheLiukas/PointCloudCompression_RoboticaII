@@ -1,5 +1,0 @@
-source;share/new_try_col/local_setup.bash
-source;share/new_try_col/local_setup.dsv
-source;share/new_try_col/local_setup.ps1
-source;share/new_try_col/local_setup.sh
-source;share/new_try_col/local_setup.zsh

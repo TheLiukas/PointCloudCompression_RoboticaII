@@ -1,4 +1,0 @@
-source;share/benchdraco_point_cloud_interfaces/local_setup.bash
-source;share/benchdraco_point_cloud_interfaces/local_setup.dsv
-source;share/benchdraco_point_cloud_interfaces/local_setup.sh
-source;share/benchdraco_point_cloud_interfaces/local_setup.zsh

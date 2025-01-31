@@ -107,16 +107,6 @@ RUN apt-get update -y || true && \
   rm ZED_SDK_Linux_Ubuntu.run && \
   rm -rf /var/lib/apt/lists/*
 
-#Install modified point_cloud_transport
-WORKDIR /root/ros2_ws/
-COPY point_cloud_transport/ ./
-WORKDIR /root/ros2_ws/point_cloud_transport/
-RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
-  apt-get update -y || true && rosdep update && \
-  rosdep install --from-paths src --ignore-src -r -y && \
-  colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=1 && \
-  echo source $(pwd)/install/local_setup.bash >> ~/.bashrc && \
-  source ~/.bashrc" 
 
 
 # Install the ZED ROS2 Wrapper

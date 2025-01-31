@@ -333,14 +333,7 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
         } else if (parameter.get_name().find("quantization_POSITION") != std::string::npos) {
           config_.quantization_POSITION = static_cast<int>(parameter.as_int());
           if (!(config_.quantization_POSITION >= 1 && config_.quantization_POSITION <= 31)) {
-            RCLCPP_ERROR_STREAM(
-              getLogger(), "quantization_POSITION value range should be between [1, 31] ");
-          }
-          return result;
-        } else if (parameter.get_name().find("quantization_NORMAL") != std::string::npos) {
-          config_.quantization_NORMAL = static_cast<int>(parameter.as_int());
-          if (!(config_.quantization_NORMAL >= 1 && config_.quantization_NORMAL <= 31)) {
-            RCLCPP_ERROR_STREAM(
+            RCLCPP_ERROR_STREAM(config_.mapping_quantization_bits_x)
               getLogger(), "quantization_NORMAL value range should be between [1, 31] ");
           }
           return result;
@@ -530,6 +523,9 @@ DracoPublisher::TypedEncodeResult DracoPublisher::encodeTyped(
   auto t0 = std::chrono::high_resolution_clock::now();
 
   std::cout<<"In encode type: "<<base_topic_<<"\n" ; 
+  std::cout<<"X Quantization bits"<<config_.mapping_quantization_bits_x<<std::endl; 
+  std::cout<<"Encode Speed"<<config_.encode_speed <<std::endl; 
+  std::cout<<"Decode Speed"<<config_.decode_speed <<std::endl; 
   // Remove invalid points if the cloud contains them - draco cannot cope with them
   sensor_msgs::msg::PointCloud2::SharedPtr rawCleaned;
   if (!raw.is_dense) {

@@ -119,8 +119,10 @@ static std::unordered_map<std::string, draco::GeometryAttribute::Type> attribute
 void DracoPublisher::declareParameters(const std::string & base_topic)
 {
   initConfiguration();
+  std::cout<<"Encode Speed before "<<config_.encode_speed<<std::endl;
+
   rcl_interfaces::msg::ParameterDescriptor encode_speed_paramDescriptor;
-  encode_speed_paramDescriptor.name = "encode_speed";
+  encode_speed_paramDescriptor.name = "bench_encode_speed";
   encode_speed_paramDescriptor.type = rcl_interfaces::msg::ParameterType::PARAMETER_INTEGER;
   encode_speed_paramDescriptor.description =
     "0 = slowest speed, but the best compression 10 = fastest, but the worst compression.";
@@ -133,9 +135,9 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
     encode_speed_paramDescriptor.name, config_.encode_speed,
     encode_speed_paramDescriptor);
   getParam<int>(encode_speed_paramDescriptor.name, config_.encode_speed);
-
+  std::cout<<"Encode Speed after "<<config_.encode_speed<<std::endl;
   rcl_interfaces::msg::ParameterDescriptor decode_speed_paramDescriptor;
-  decode_speed_paramDescriptor.name = "decode_speed";
+  decode_speed_paramDescriptor.name = "bench_decode_speed";
   decode_speed_paramDescriptor.type = rcl_interfaces::msg::ParameterType::PARAMETER_INTEGER;
   decode_speed_paramDescriptor.description =
     "0 = slowest speed, but the best compression 10 = fastest, but the worst compression.";
@@ -147,10 +149,11 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
   declareParam<int>(
     decode_speed_paramDescriptor.name, config_.decode_speed,
     decode_speed_paramDescriptor);
+ 
   getParam<int>(decode_speed_paramDescriptor.name, config_.decode_speed);
 
   rcl_interfaces::msg::ParameterDescriptor encode_method_paramDescriptor;
-  encode_method_paramDescriptor.name = "encode_method";
+  encode_method_paramDescriptor.name = "bench_encode_method";
   encode_method_paramDescriptor.type = rcl_interfaces::msg::ParameterType::PARAMETER_INTEGER;
   encode_method_paramDescriptor.description =
     "Encoding process method, 0 = auto, 1 = KD-tree, 2 = sequential";
@@ -165,7 +168,7 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
   getParam<int>(encode_method_paramDescriptor.name, config_.encode_method);
 
   rcl_interfaces::msg::ParameterDescriptor deduplicate_paramDescriptor;
-  deduplicate_paramDescriptor.name = "deduplicate";
+  deduplicate_paramDescriptor.name = "bench_deduplicate";
   deduplicate_paramDescriptor.type = rcl_interfaces::msg::ParameterType::PARAMETER_BOOL;
   deduplicate_paramDescriptor.description =
     "Remove duplicate point entries.";
@@ -173,7 +176,7 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
   getParam<bool>(deduplicate_paramDescriptor.name, config_.deduplicate);
 
   rcl_interfaces::msg::ParameterDescriptor force_quantization_paramDescriptor;
-  force_quantization_paramDescriptor.name = "force_quantization";
+  force_quantization_paramDescriptor.name = "bench_force_quantization";
   force_quantization_paramDescriptor.type = rcl_interfaces::msg::ParameterType::PARAMETER_BOOL;
   force_quantization_paramDescriptor.description =
     "Force attribute quantization. Attributes of type float32 must be quantized for kd-tree "
@@ -184,7 +187,7 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
   getParam<bool>(force_quantization_paramDescriptor.name, config_.force_quantization);
 
   rcl_interfaces::msg::ParameterDescriptor quantization_POSITION_paramDescriptor;
-  quantization_POSITION_paramDescriptor.name = "quantization_POSITION";
+  quantization_POSITION_paramDescriptor.name = "bench_quantization_POSITION";
   quantization_POSITION_paramDescriptor.type =
     rcl_interfaces::msg::ParameterType::PARAMETER_INTEGER;
   quantization_POSITION_paramDescriptor.description =
@@ -200,7 +203,7 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
   getParam<int>(quantization_POSITION_paramDescriptor.name, config_.quantization_POSITION);
 
   rcl_interfaces::msg::ParameterDescriptor quantization_NORMAL_paramDescriptor;
-  quantization_NORMAL_paramDescriptor.name = "quantization_NORMAL";
+  quantization_NORMAL_paramDescriptor.name = "bench_quantization_NORMAL";
   quantization_NORMAL_paramDescriptor.type = rcl_interfaces::msg::ParameterType::PARAMETER_INTEGER;
   quantization_NORMAL_paramDescriptor.description =
     "Number of bits for quantization of NORMAL type attributes.";
@@ -215,7 +218,7 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
   getParam<int>(quantization_NORMAL_paramDescriptor.name, config_.quantization_NORMAL);
 
   rcl_interfaces::msg::ParameterDescriptor quantization_COLOR_paramDescriptor;
-  quantization_COLOR_paramDescriptor.name = "quantization_COLOR";
+  quantization_COLOR_paramDescriptor.name = "bench_quantization_COLOR";
   quantization_COLOR_paramDescriptor.type = rcl_interfaces::msg::ParameterType::PARAMETER_INTEGER;
   quantization_COLOR_paramDescriptor.description =
     "Number of bits for quantization of COLOR type attributes.";
@@ -230,7 +233,7 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
   getParam<int>(quantization_COLOR_paramDescriptor.name, config_.quantization_COLOR);
 
   rcl_interfaces::msg::ParameterDescriptor quantization_TEX_COORD_paramDescriptor;
-  quantization_TEX_COORD_paramDescriptor.name = "quantization_TEX_COORD";
+  quantization_TEX_COORD_paramDescriptor.name = "bench_quantization_TEX_COORD";
   quantization_TEX_COORD_paramDescriptor.type =
     rcl_interfaces::msg::ParameterType::PARAMETER_INTEGER;
   quantization_TEX_COORD_paramDescriptor.description =
@@ -246,7 +249,7 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
   getParam<int>(quantization_TEX_COORD_paramDescriptor.name, config_.quantization_TEX_COORD);
 
   rcl_interfaces::msg::ParameterDescriptor quantization_GENERIC_paramDescriptor;
-  quantization_GENERIC_paramDescriptor.name = "quantization_GENERIC";
+  quantization_GENERIC_paramDescriptor.name = "bench_quantization_GENERIC";
   quantization_GENERIC_paramDescriptor.type =
     rcl_interfaces::msg::ParameterType::PARAMETER_INTEGER;
   quantization_GENERIC_paramDescriptor.description =
@@ -262,7 +265,7 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
   getParam<int>(quantization_GENERIC_paramDescriptor.name, config_.quantization_GENERIC);
 
   rcl_interfaces::msg::ParameterDescriptor expert_quantization_paramDescriptor;
-  expert_quantization_paramDescriptor.name = "expert_quantization";
+  expert_quantization_paramDescriptor.name = "bench_expert_quantization";
   expert_quantization_paramDescriptor.type =
     rcl_interfaces::msg::ParameterType::PARAMETER_INTEGER;
   expert_quantization_paramDescriptor.description =
@@ -274,7 +277,7 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
   getParam<bool>(expert_quantization_paramDescriptor.name, config_.expert_quantization);
 
   rcl_interfaces::msg::ParameterDescriptor expert_attribute_types_paramDescriptor;
-  expert_attribute_types_paramDescriptor.name = "expert_attribute_types";
+  expert_attribute_types_paramDescriptor.name = "bench_expert_attribute_types";
   expert_attribute_types_paramDescriptor.type =
     rcl_interfaces::msg::ParameterType::PARAMETER_INTEGER;
   expert_attribute_types_paramDescriptor.description =
@@ -287,15 +290,15 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
 
   // we call get param at runtime to get the latest value for these
 
-  declareParam<std::string>("attribute_mapping.attribute_type.x", "POSITION");
-  declareParam<std::string>("attribute_mapping.attribute_type.y", "POSITION");
-  declareParam<std::string>("attribute_mapping.attribute_type.z", "POSITION");
-  declareParam<int>("attribute_mapping.quantization_bits.x", config_.mapping_quantization_bits_x);
-  declareParam<int>("attribute_mapping.quantization_bits.y", config_.mapping_quantization_bits_y);
-  declareParam<int>("attribute_mapping.quantization_bits.z", config_.mapping_quantization_bits_z);
-  declareParam<int>("attribute_mapping.quantization_bits.rgb", config_.mapping_quantization_bits_rgb);
-  declareParam<bool>("attribute_mapping.rgba_tweak.rgb", config_.mapping_rgba_tweak_rgb);
-  declareParam<bool>("attribute_mapping.rgba_tweak.rgba", config_.mapping_rgba_tweak_rgba);
+  declareParam<std::string>("bench_attribute_mapping.attribute_type.x", "POSITION");
+  declareParam<std::string>("bench_attribute_mapping.attribute_type.y", "POSITION");
+  declareParam<std::string>("bench_attribute_mapping.attribute_type.z", "POSITION");
+  declareParam<int>("bench_attribute_mapping.quantization_bits.x", config_.mapping_quantization_bits_x);
+  declareParam<int>("bench_attribute_mapping.quantization_bits.y", config_.mapping_quantization_bits_y);
+  declareParam<int>("bench_attribute_mapping.quantization_bits.z", config_.mapping_quantization_bits_z);
+  declareParam<int>("bench_attribute_mapping.quantization_bits.rgb", config_.mapping_quantization_bits_rgb);
+  declareParam<bool>("bench_attribute_mapping.rgba_tweak.rgb", config_.mapping_rgba_tweak_rgb);
+  declareParam<bool>("bench_attribute_mapping.rgba_tweak.rgba", config_.mapping_rgba_tweak_rgba);
 
   auto param_change_callback =
     [this](const std::vector<rclcpp::Parameter> & parameters) -> rcl_interfaces::msg::
@@ -304,61 +307,62 @@ void DracoPublisher::declareParameters(const std::string & base_topic)
       auto result = rcl_interfaces::msg::SetParametersResult();
       result.successful = true;
       for (auto parameter : parameters) {
-        if (parameter.get_name().find("expert_quantization") != std::string::npos) {
+        if (parameter.get_name().find("bench_expert_quantization") != std::string::npos) {
           config_.expert_quantization = parameter.as_bool();
           return result;
-        } else if (parameter.get_name().find("force_quantization") != std::string::npos) {
+        } else if (parameter.get_name().find("bench_force_quantization") != std::string::npos) {
           config_.force_quantization = parameter.as_bool();
           return result;
-        } else if (parameter.get_name().find("encode_speed") != std::string::npos) {
+        } else if (parameter.get_name().find("bench_encode_speed") != std::string::npos) {
           config_.encode_speed = static_cast<int>(parameter.as_int());
+          std::cout<<"Encode Speed in callback "<<config_.encode_speed<<std::endl;
           if (!(config_.encode_speed >= 0 && config_.encode_speed <= 10)) {
             RCLCPP_ERROR_STREAM(
               getLogger(), "encode_speed value range should be between [0, 10] ");
           }
           return result;
-        } else if (parameter.get_name().find("decode_speed") != std::string::npos) {
+        } else if (parameter.get_name().find("bench_decode_speed") != std::string::npos) {
           config_.decode_speed = static_cast<int>(parameter.as_int());
           if (!(config_.decode_speed >= 0 && config_.decode_speed <= 10)) {
             RCLCPP_ERROR_STREAM(
               getLogger(), "decode_speed value range should be between [0, 10] ");
           }
           return result;
-        } else if (parameter.get_name().find("encode_method") != std::string::npos) {
+        } else if (parameter.get_name().find("bench_encode_method") != std::string::npos) {
           config_.encode_method = static_cast<int>(parameter.as_int());
           return result;
-        } else if (parameter.get_name().find("deduplicate") != std::string::npos) {
+        } else if (parameter.get_name().find("bench_deduplicate") != std::string::npos) {
           config_.deduplicate = parameter.as_bool();
           return result;
-        } else if (parameter.get_name().find("quantization_POSITION") != std::string::npos) {
+        } else if (parameter.get_name().find("bench_quantization_POSITION") != std::string::npos) {
           config_.quantization_POSITION = static_cast<int>(parameter.as_int());
           if (!(config_.quantization_POSITION >= 1 && config_.quantization_POSITION <= 31)) {
-            RCLCPP_ERROR_STREAM(config_.mapping_quantization_bits_x)
+            RCLCPP_ERROR_STREAM(
               getLogger(), "quantization_NORMAL value range should be between [1, 31] ");
           }
           return result;
-        } else if (parameter.get_name().find("quantization_COLOR") != std::string::npos) {
+        } else if (parameter.get_name().find("bench_quantization_COLOR") != std::string::npos) {
           config_.quantization_COLOR = static_cast<int>(parameter.as_int());
           if (!(config_.quantization_COLOR >= 1 && config_.quantization_COLOR <= 31)) {
             RCLCPP_ERROR_STREAM(
               getLogger(), "quantization_COLOR value range should be between [1, 31] ");
           }
           return result;
-        } else if (parameter.get_name().find("quantization_TEX_COORD") != std::string::npos) {
+        } else if (parameter.get_name().find("bench_quantization_TEX_COORD") != std::string::npos) {
           config_.quantization_TEX_COORD = static_cast<int>(parameter.as_int());
           if (!(config_.quantization_TEX_COORD >= 1 && config_.quantization_TEX_COORD <= 31)) {
             RCLCPP_ERROR_STREAM(
               getLogger(), "quantization_TEX_COORD value range should be between [1, 31] ");
           }
           return result;
-        } else if (parameter.get_name().find("quantization_GENERIC") != std::string::npos) {
+        } else if (parameter.get_name().find("bench_quantization_GENERIC") != std::string::npos) {
           config_.quantization_GENERIC = static_cast<int>(parameter.as_int());
           if (!(config_.quantization_GENERIC >= 1 && config_.quantization_GENERIC <= 31)) {
             RCLCPP_ERROR_STREAM(
               getLogger(), "quantization_GENERIC value range should be between [1, 31] ");
           }
           return result;
-        } else if (parameter.get_name().find("expert_attribute_types") != std::string::npos) {
+        } else if (parameter.get_name().find("bench_expert_attribute_types") != std::string::npos) {
           config_.expert_attribute_types = parameter.as_bool();
           return result;
         }
@@ -399,7 +403,7 @@ tl::expected<std::unique_ptr<draco::PointCloud>, std::string> DracoPublisher::co
     if (expert_encoding) {  // find attribute type in user specified parameters
       rgba_tweak = false;
       if (getParam(
-          topic + "/attribute_mapping/attribute_type/" + field.name,
+          topic + "/attribute_mapping/attribute_type/bench_" + field.name,
           expert_attribute_data_type))
       {
         if (expert_attribute_data_type == "POSITION") {  // if data type is POSITION

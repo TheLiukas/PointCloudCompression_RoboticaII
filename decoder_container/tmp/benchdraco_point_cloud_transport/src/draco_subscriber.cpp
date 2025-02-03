@@ -157,7 +157,9 @@ DracoSubscriber::DecodeResult DracoSubscriber::decodeTyped(
    
   //uint32_t compressed_data_size = static_cast<uint32_t>(compressed.compressed_data.size());
   uint32_t compressed_data_size=static_cast<uint32_t>(compressed.compressed_size);
-
+  std::cout<<"Compression Level(Enc&Dec speed) :"<< static_cast<uint8_t>(compressed.encoding_speed)+0<<std::endl;
+  std::cout<<"Quantization bits :"<< static_cast<uint8_t>(compressed.quantization_bits)+0<<std::endl;
+  
   std::cout<<"Original data size :" <<static_cast<uint32_t>(compressed.raw_size)/1024.0/1024.0 <<" MB"<<std::endl; 
   std::cout<<"Compressed data size :" <<compressed_data_size/1024.0/1024.0 <<" MB"<<std::endl; 
 
@@ -180,9 +182,9 @@ DracoSubscriber::DecodeResult DracoSubscriber::decodeTyped(
 
   double encoding=encod_sec_diff + encod_nanosec_diff/1.e9;
   double transmission_time=trans_sec_diff + trans_nanosec_diff/1.e9;
-  std::cout<<"Encoding time: " <<encoding<<"s"<<std::endl;
+  std::cout<<"Encoding time :" <<encoding<<" s"<<std::endl;
 
-  std::cout<<"Transmission time: " <<transmission_time<<"s"<<std::endl;
+  std::cout<<"Transmission time: " <<transmission_time<<" s"<<std::endl;
 
   draco::DecoderBuffer decode_buffer;
   std::vector<unsigned char> vec_data = compressed.compressed_data;
@@ -233,8 +235,8 @@ DracoSubscriber::DecodeResult DracoSubscriber::decodeTyped(
   int32_t decod_sec_diff=tDurS1-tDurS0;
   int32_t decod_nanosec_diff=tDurN1-tDurN0;
   double decoding_time=decod_sec_diff + decod_nanosec_diff/1.e9;
-  std::cout<<"Decoding time: " <<decoding_time<<std::endl;
-  std::cout<<"Total time: "<<encoding+transmission_time+decoding_time<<"s"<<std::endl;
+  std::cout<<"Decoding time :" <<decoding_time<<" s"<<std::endl;
+  std::cout<<"Total time :"<<encoding+transmission_time+decoding_time<<" s"<<std::endl;
   std::cout<<"----------------------------------------------------------"<<std::endl;
   return message;
 }

@@ -20,6 +20,10 @@ uint32 compressed_size
 
 uint32 raw_size
 
+uint8 encoding_speed
+
+uint8 quantization_bits
+
 builtin_interfaces/Time encoding_start_timestamp
 
 builtin_interfaces/Time encoding_finish_timestamp

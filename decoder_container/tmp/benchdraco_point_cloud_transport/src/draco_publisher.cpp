@@ -694,7 +694,8 @@ DracoPublisher::TypedEncodeResult DracoPublisher::encodeTyped(
   compressed.decoding_start_timestamp.nanosec=static_cast<int> (tDurN0);
   compressed.decoding_finish_timestamp.sec=static_cast<int> (tDurS1);
   compressed.decoding_finish_timestamp.nanosec=static_cast<int> (tDurN1);
-
+  compressed.encoding_speed=config_.encode_speed;
+  compressed.quantization_bits=config_.quantization_POSITION;
 
   return compressed;
 }
